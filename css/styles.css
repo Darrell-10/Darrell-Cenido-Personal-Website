@@ -34,6 +34,7 @@
   --max: 1120px;
   --font-sans: "Space Grotesk", "Eurostile", system-ui, sans-serif;
   --font-num: "Outfit", "Space Grotesk", sans-serif;
+  --font-script: "Great Vibes", "Segoe Script", "Apple Chancery", cursive;
 }
 
 *,
@@ -229,6 +230,21 @@ a:hover {
   text-transform: uppercase;
   line-height: 1.2;
   white-space: nowrap;
+}
+
+.brand-number {
+  display: inline-block;
+  margin-left: 0.15rem;
+  padding-left: 0.15rem;
+  font-family: var(--font-script);
+  font-size: clamp(1.85rem, 3vw, 2.35rem);
+  font-weight: 400;
+  line-height: 0.85;
+  letter-spacing: 0.02em;
+  color: var(--cream-light);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  transform: rotate(-4deg);
+  user-select: none;
 }
 
 .nav-toggle {
