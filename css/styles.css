@@ -231,20 +231,6 @@ a:hover {
   line-height: 1.05;
 }
 
-.brand-number {
-  display: inline-block;
-  margin-left: 0;
-  padding-left: 0;
-  font-family: var(--font-sans);
-  font-size: clamp(1.05rem, 1.8vw, 1.35rem);
-  font-weight: 800;
-  line-height: 1.05;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-  color: var(--cream-light);
-  user-select: none;
-}
-
 .nav-toggle {
   display: none;
   justify-self: end;
@@ -1303,8 +1289,7 @@ h3 {
     gap: 0.2rem 0.65rem;
   }
 
-  .brand-text strong,
-  .brand-number {
+  .brand-text strong {
     font-size: 1.05rem;
   }
 
