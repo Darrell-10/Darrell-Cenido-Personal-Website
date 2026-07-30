@@ -174,13 +174,8 @@ a:hover {
   color: var(--cream);
 }
 
-.brand:hover .brand-text strong,
-.brand:hover .brand-text span {
+.brand:hover .brand-text strong {
   color: inherit;
-}
-
-.brand:hover .brand-text span {
-  color: rgba(245, 230, 211, 0.8);
 }
 
 .brand-mark {
@@ -219,17 +214,6 @@ a:hover {
   text-transform: uppercase;
   color: var(--cream-light);
   line-height: 1.05;
-}
-
-.brand-text span {
-  display: inline-block;
-  font-size: 0.78rem;
-  font-weight: 500;
-  color: rgba(245, 230, 211, 0.68);
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  line-height: 1.2;
-  white-space: nowrap;
 }
 
 .brand-number {
@@ -971,11 +955,6 @@ h3 {
 
   .brand-text strong {
     font-size: 1.15rem;
-  }
-
-  .brand-text span {
-    font-size: 0.68rem;
-    white-space: normal;
   }
 
   .brand-number {
