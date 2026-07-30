@@ -99,16 +99,22 @@ a:hover {
 }
 
 .brand-mark {
-  width: 42px;
-  height: 42px;
+  width: 46px;
+  height: 46px;
   border-radius: 12px;
-  background: linear-gradient(145deg, var(--navy), var(--navy-soft));
+  background: var(--cream);
   border: 2px solid var(--baby-blue);
   display: grid;
   place-items: center;
-  font-family: var(--font-display);
-  font-weight: 700;
-  color: var(--baby-blue);
+  overflow: hidden;
+  padding: 0.28rem;
+}
+
+.brand-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 .brand-text strong {
