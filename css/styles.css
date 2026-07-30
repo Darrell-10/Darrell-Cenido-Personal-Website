@@ -1065,6 +1065,8 @@ h3 {
   text-align: center;
   display: grid;
   justify-items: center;
+  padding-top: 2.75rem;
+  margin-bottom: 2.5rem;
 }
 
 .gallery-intro h1 {
