@@ -530,8 +530,12 @@ h3 {
 /* Marks kept slightly smaller but still centered in the same row */
 .conveyor-item-spartan img,
 .conveyor-item-gonzaga img {
-  height: 2.15rem;
-  max-height: 2.15rem;
+  height: 2.55rem;
+  max-height: 2.55rem;
+}
+
+.conveyor-item-brandcapsule img {
+  transform: translateY(0.28rem);
 }
 
 @keyframes conveyor-scroll {
@@ -1126,8 +1130,12 @@ h3 {
 
   .conveyor-item-spartan img,
   .conveyor-item-gonzaga img {
-    height: 1.85rem;
-    max-height: 1.85rem;
+    height: 2.15rem;
+    max-height: 2.15rem;
+  }
+
+  .conveyor-item-brandcapsule img {
+    transform: translateY(0.22rem);
   }
 
   .conveyor-track {
