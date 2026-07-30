@@ -151,7 +151,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const stopsEl = document.querySelector(".journey-stops");
     const syncMapHeight = () => {
       if (!stopsEl) return;
-      const nextHeight = Math.max(Math.round(stopsEl.getBoundingClientRect().height), 520);
+      const nextHeight = Math.max(Math.round(stopsEl.getBoundingClientRect().height), 440);
       mapEl.style.height = `${nextHeight}px`;
       map.invalidateSize();
     };

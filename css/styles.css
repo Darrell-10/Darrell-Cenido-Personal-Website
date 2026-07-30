@@ -1028,7 +1028,7 @@ h3 {
   position: relative;
   z-index: 0;
   isolation: isolate;
-  height: 560px;
+  height: 480px;
   min-height: 100%;
   border-radius: 24px;
   overflow: hidden;
@@ -1070,13 +1070,14 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 0.35rem;
+  gap: 0.45rem;
   height: 100%;
-  min-height: 560px;
-  padding: 0;
+  min-height: 480px;
+  padding: 0.15rem 0;
 }
 
 .journey-stop {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1084,29 +1085,50 @@ h3 {
   flex: 1 1 0;
   width: 100%;
   text-align: left;
-  padding: 0.55rem 0.85rem;
+  padding: 0.45rem 0.85rem 0.45rem 1rem;
   border: 0;
-  border-left: 3px solid var(--baby-blue);
   border-radius: 0 14px 14px 0;
   background: transparent;
   color: inherit;
   cursor: pointer;
   font: inherit;
-  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.journey-stop::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 1.05rem;
+  border-radius: 999px;
+  background: var(--baby-blue);
+  transition: background 0.2s ease, height 0.2s ease;
 }
 
 .journey-stop:hover,
 .journey-stop:focus-visible {
   background: color-mix(in srgb, var(--baby-blue) 12%, transparent);
-  border-left-color: var(--navy-soft);
   outline: none;
   transform: translateX(2px);
 }
 
+.journey-stop:hover::before,
+.journey-stop:focus-visible::before {
+  background: var(--navy-soft);
+  height: 1.25rem;
+}
+
 .journey-stop.is-active {
   background: color-mix(in srgb, var(--baby-blue) 22%, transparent);
-  border-left-color: var(--navy);
   outline: none;
+}
+
+.journey-stop.is-active::before {
+  background: var(--navy);
+  height: 1.35rem;
 }
 
 .journey-stop strong {
