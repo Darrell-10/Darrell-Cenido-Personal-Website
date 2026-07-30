@@ -1424,7 +1424,7 @@ h3 {
   height: 36px;
   border-radius: 50%;
   flex: 0 0 auto;
-  background: linear-gradient(145deg, #d7c7b3, #b9a792);
+  background: var(--clay);
 }
 
 .tweet-filler-meta {
@@ -1443,7 +1443,7 @@ h3 {
   display: block;
   height: 8px;
   border-radius: 999px;
-  background: linear-gradient(90deg, #d8cbb9, #e8ddcf 55%, #d8cbb9);
+  background: var(--clay);
   width: 100%;
 }
 
@@ -1462,9 +1462,7 @@ h3 {
 .tweet-filler-media {
   height: 110px;
   border-radius: 12px;
-  background:
-    linear-gradient(135deg, rgba(15, 28, 46, 0.08), rgba(168, 213, 229, 0.22)),
-    linear-gradient(180deg, #cfc0ab, #b7a690);
+  background: var(--clay);
 }
 
 .tweet-filler-media.tall {
