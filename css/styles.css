@@ -517,6 +517,13 @@ h3 {
   width: 11.5rem;
 }
 
+.conveyor-item-spartan img {
+  width: 68%;
+  height: 68%;
+  max-width: 68%;
+  max-height: 68%;
+}
+
 @keyframes conveyor-scroll {
   from {
     transform: translateX(0);
