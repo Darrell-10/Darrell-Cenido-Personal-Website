@@ -478,10 +478,6 @@ h3 {
   will-change: transform;
 }
 
-.conveyor:hover .conveyor-track {
-  animation-play-state: running;
-}
-
 .conveyor-group {
   display: flex;
   align-items: center;
