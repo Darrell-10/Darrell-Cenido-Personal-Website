@@ -70,7 +70,8 @@ document.addEventListener("DOMContentLoaded", () => {
   if (mapEl && window.L) {
     const map = L.map(mapEl, {
       scrollWheelZoom: false,
-    }).setView([40.5, -118.5], 5);
+      worldCopyJump: true,
+    }).setView([20, 0], 2);
 
     L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
       attribution:
@@ -90,11 +91,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const stops = [
       {
-        coords: [9.0789, 126.1986],
+        // Tandag City, Surigao del Sur, Philippines
+        coords: [9.0794, 126.1711],
         title: "Tandag City, Surigao del Sur",
         detail:
           "Where my family is from — Quezon City, Manila, and Tandag City.",
-        zoom: 7,
+        zoom: 6,
       },
       {
         coords: [37.7805, -121.5425],
@@ -143,7 +145,9 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     ).addTo(map);
 
-    map.fitBounds(L.latLngBounds(stops.map((stop) => stop.coords)).pad(0.2));
+    const allBounds = L.latLngBounds(stops.map((stop) => stop.coords));
+    map.fitBounds(allBounds.pad(0.15));
+    setTimeout(() => map.invalidateSize(), 0);
 
     const stopButtons = Array.from(document.querySelectorAll(".journey-stop"));
     let activeIndex = -1;
