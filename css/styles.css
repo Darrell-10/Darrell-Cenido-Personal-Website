@@ -524,6 +524,13 @@ h3 {
   max-height: 68%;
 }
 
+.conveyor-item-gonzaga img {
+  width: 68%;
+  height: 68%;
+  max-width: 68%;
+  max-height: 68%;
+}
+
 @keyframes conveyor-scroll {
   from {
     transform: translateX(0);
