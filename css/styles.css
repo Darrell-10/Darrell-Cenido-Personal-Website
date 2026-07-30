@@ -1909,6 +1909,13 @@ h3 {
     scroll-behavior: auto;
   }
 
+  .tweets-gallery-wall .twitter-embed-wrap,
+  .tweets-gallery-wall .twitter-embed-wrap:hover,
+  .tweets-gallery-wall .tweet-featured:hover {
+    transform: none;
+    transition: none;
+  }
+
   .conveyor-track {
     animation: none;
     flex-wrap: wrap;
