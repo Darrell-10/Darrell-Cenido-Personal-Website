@@ -1121,6 +1121,19 @@ h3 {
   color: var(--ink);
 }
 
+.twitter-embed-wrap {
+  padding: 1.05rem 1.05rem;
+}
+
+.twitter-tweet {
+  width: 100%;
+  margin: 0 auto !important;
+}
+
+.twitter-tweet iframe {
+  width: 100% !important;
+}
+
 .embed-card-copy {
   display: flex;
   align-items: stretch;
