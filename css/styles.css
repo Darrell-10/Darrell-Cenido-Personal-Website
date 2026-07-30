@@ -587,6 +587,22 @@ h3 {
   font-family: var(--font-num);
 }
 
+.card-label {
+  display: inline-block;
+  margin-bottom: 0.65rem;
+  padding: 0;
+  background: none;
+  box-shadow: none;
+  border: 0;
+  border-radius: 0;
+  color: var(--navy);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-family: var(--font-num);
+}
+
 .statement {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
