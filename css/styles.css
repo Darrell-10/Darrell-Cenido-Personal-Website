@@ -1278,6 +1278,12 @@ h3 {
   align-items: start;
 }
 
+.gallery-recent-trio {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 1.2rem;
+  align-items: start;
+}
+
 .tweets-gallery-wall {
   --tweet-scale: 0.84;
   position: relative;
@@ -1890,7 +1896,8 @@ h3 {
 
   .gallery-grid,
   .gallery-grid-featured,
-  .gallery-grid-links {
+  .gallery-grid-links,
+  .gallery-recent-trio {
     grid-template-columns: 1fr;
   }
 
@@ -1969,7 +1976,8 @@ h3 {
 
   .gallery-grid,
   .gallery-grid-featured,
-  .gallery-grid-links {
+  .gallery-grid-links,
+  .gallery-recent-trio {
     grid-template-columns: 1fr;
   }
 
