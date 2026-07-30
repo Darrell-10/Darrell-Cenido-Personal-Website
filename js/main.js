@@ -141,7 +141,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let activeIndex = -1;
 
     const flyOptions = {
-      duration: 2.8,
+      duration: 1.5,
       easeLinearity: 0.12,
     };
 
