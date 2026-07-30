@@ -518,6 +518,29 @@ h3 {
   line-height: 0;
 }
 
+.conveyor-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+  border-radius: 12px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.conveyor-link:hover,
+.conveyor-link:focus-visible {
+  transform: scale(1.06);
+  opacity: 0.92;
+  outline: none;
+}
+
+.conveyor-link:focus-visible {
+  box-shadow: 0 0 0 3px rgba(168, 213, 229, 0.55);
+}
+
 .conveyor-item img {
   display: block;
   width: auto;
