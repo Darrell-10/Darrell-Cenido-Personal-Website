@@ -1398,7 +1398,7 @@ h3 {
   z-index: 2;
   pointer-events: none;
   user-select: none;
-  opacity: 0.72;
+  opacity: 1;
   translate: -55% -74%;
   transform: rotate(var(--tilt, 0deg)) scale(var(--filler-scale, 0.84));
   transform-origin: center center;
@@ -1406,45 +1406,87 @@ h3 {
 
 .tweet-filler-card {
   background: #fff;
-  border: 1px solid rgba(34, 23, 16, 0.08);
-  border-radius: 16px;
-  padding: 0.85rem 0.9rem 1rem;
-  box-shadow: 0 8px 16px rgba(34, 23, 16, 0.1);
+  border: 1px solid #e1e8ed;
+  border-radius: 12px;
+  padding: 0.75rem 0.85rem 0.65rem;
+  box-shadow: 0 1px 3px rgba(15, 28, 46, 0.08), 0 10px 18px rgba(34, 23, 16, 0.08);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 .tweet-filler-head {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
-  gap: 0.65rem;
-  margin-bottom: 0.7rem;
+  gap: 0.55rem;
+  margin-bottom: 0.55rem;
 }
 
 .tweet-filler-avatar {
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   flex: 0 0 auto;
-  background: var(--clay);
+  background:
+    radial-gradient(circle at 35% 30%, #f5f8fa 0 22%, transparent 23%),
+    linear-gradient(145deg, #aab8c2, #8899a6);
 }
 
 .tweet-filler-meta {
   display: grid;
-  gap: 0.35rem;
-  width: 100%;
+  gap: 0.28rem;
+  min-width: 0;
+}
+
+.tweet-filler-name-row {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.tweet-filler-badge {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex: 0 0 auto;
+  background: #1d9bf0;
+  box-shadow: inset 0 0 0 2px #fff;
+  opacity: 0.9;
+}
+
+.tweet-filler-x {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  background: #0f1419;
+  opacity: 0.85;
+  clip-path: polygon(10% 0, 45% 0, 50% 28%, 55% 0, 90% 0, 62% 48%, 92% 100%, 58% 100%, 50% 70%, 42% 100%, 8% 100%, 38% 48%);
 }
 
 .tweet-filler-body {
   display: grid;
-  gap: 0.4rem;
-  margin-bottom: 0.7rem;
+  gap: 0.38rem;
+  margin: 0 0 0.65rem;
 }
 
 .tweet-filler-line {
   display: block;
-  height: 8px;
+  height: 9px;
   border-radius: 999px;
-  background: var(--clay);
+  background: #cfd9de;
   width: 100%;
+}
+
+.tweet-filler-line.name {
+  width: 42%;
+  height: 10px;
+  background: #0f1419;
+  opacity: 0.78;
+}
+
+.tweet-filler-line.handle {
+  width: 34%;
+  height: 8px;
+  background: #8b98a5;
 }
 
 .tweet-filler-line.mid {
@@ -1460,13 +1502,44 @@ h3 {
 }
 
 .tweet-filler-media {
-  height: 110px;
+  height: 132px;
   border-radius: 12px;
-  background: var(--clay);
+  border: 1px solid #e1e8ed;
+  margin-bottom: 0.65rem;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.12), rgba(15, 20, 25, 0.05)),
+    linear-gradient(135deg, #e7ecf0 0%, #d3dce3 48%, #c5d0d8 100%);
+  overflow: hidden;
+  position: relative;
+}
+
+.tweet-filler-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 30% 35%, rgba(255, 255, 255, 0.35), transparent 42%),
+    linear-gradient(120deg, transparent 40%, rgba(29, 155, 240, 0.08) 100%);
 }
 
 .tweet-filler-media.tall {
-  height: 150px;
+  height: 168px;
+}
+
+.tweet-filler-actions {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.4rem;
+  padding-top: 0.15rem;
+}
+
+.tweet-filler-actions span {
+  display: block;
+  height: 12px;
+  width: 42%;
+  border-radius: 999px;
+  background: #cfd9de;
+  margin: 0.15rem auto;
 }
 
 /* Filler ring around centerpiece (looser surround) */
