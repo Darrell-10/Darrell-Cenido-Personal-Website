@@ -1275,15 +1275,28 @@ h3 {
 
 .gallery-grid-featured {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
 }
 
 .gallery-grid-featured .tweet-featured {
   grid-column: 1 / -1;
-}
-
-.gallery-grid-featured .tweet-featured .twitter-embed-wrap {
   display: flex;
   justify-content: center;
+}
+
+.twitter-embed-wrap {
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.twitter-tweet {
+  width: 100%;
+  margin: 0 auto !important;
+}
+
+.twitter-tweet iframe {
+  width: 100% !important;
 }
 
 .gallery-grid-links {
@@ -1381,19 +1394,6 @@ h3 {
   font-size: 0.9rem;
   line-height: 1.25;
   color: var(--ink);
-}
-
-.twitter-embed-wrap {
-  padding: 1.05rem 1.05rem;
-}
-
-.twitter-tweet {
-  width: 100%;
-  margin: 0 auto !important;
-}
-
-.twitter-tweet iframe {
-  width: 100% !important;
 }
 
 .embed-card-copy {
