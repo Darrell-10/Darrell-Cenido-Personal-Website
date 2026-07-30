@@ -201,21 +201,34 @@ a:hover {
   filter: brightness(0) invert(1);
 }
 
+.brand-text {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.55rem 0.85rem;
+  min-width: 0;
+}
+
 .brand-text strong {
-  display: block;
+  display: inline-block;
   font-family: var(--font-sans);
-  font-size: 0.98rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
+  font-size: clamp(1.2rem, 2.2vw, 1.55rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
   text-transform: uppercase;
   color: var(--cream-light);
+  line-height: 1.05;
 }
 
 .brand-text span {
-  display: block;
-  font-size: 0.72rem;
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 500;
   color: rgba(245, 230, 211, 0.68);
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  line-height: 1.2;
+  white-space: nowrap;
 }
 
 .nav-toggle {
