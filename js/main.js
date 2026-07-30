@@ -90,6 +90,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const stops = [
       {
+        coords: [9.0789, 126.1986],
+        title: "Tandag City, Surigao del Sur",
+        detail:
+          "Where my family is from — Quezon City, Manila, and Tandag City.",
+        zoom: 7,
+      },
+      {
         coords: [37.7805, -121.5425],
         title: "Mountain House, CA",
         detail:
@@ -125,8 +132,9 @@ document.addEventListener("DOMContentLoaded", () => {
       return marker;
     });
 
+    // Connect the U.S. path as a continuous route; Philippines stands as family roots.
     L.polyline(
-      stops.map((stop) => stop.coords),
+      stops.slice(1).map((stop) => stop.coords),
       {
         color: "#3b2414",
         weight: 3,
