@@ -162,53 +162,63 @@
           </div>
           <p>What fills the space between practices, projects, and deadlines.</p>
         </div>
-        <div class="hobby-grid">
-          <article class="hobby">
-            <div class="hobby-media">
+        <div class="hobbies-layout">
+          <button
+            class="hobby-stack"
+            type="button"
+            aria-label="Click to view next hobby photo"
+            data-hobby-stack
+          >
+            <figure class="hobby-stack-card is-active" data-hobby-card>
               <img
                 src="assets/images/hobbies/hobby-basketball.jpg"
                 alt="Darrell Cenido celebrating with kids on the basketball court"
               />
-            </div>
-            <strong>Basketball</strong>
-            <p>
-              Gonzaga Club Basketball after a De La Salle varsity career — film, footwork, and
-              sharing the game whenever I can.
-            </p>
-          </article>
-          <article class="hobby">
-            <div class="hobby-media">
+            </figure>
+            <figure class="hobby-stack-card" data-hobby-card aria-hidden="true">
               <img
                 src="assets/images/hobbies/hobby-curiosity.jpg"
                 alt="Darrell Cenido reading in a library surrounded by books"
               />
-            </div>
-            <strong>Computer Science</strong>
-            <p>
-              Building cleaner systems, exploring algorithms, and refining workflows until better
-              becomes the default.
-            </p>
-          </article>
-          <article class="hobby">
-            <div class="hobby-media">
+            </figure>
+            <figure class="hobby-stack-card" data-hobby-card aria-hidden="true">
               <img
                 src="assets/images/hobbies/hobby-community.jpg"
                 alt="Darrell Cenido laughing with friends in a candid basketball moment"
               />
-            </div>
-            <strong>Travel &amp; Family</strong>
-            <p>
-              Cruise traditions, garden mazes, and new cities — adventures that keep curiosity and
-              connection alive.
-            </p>
-          </article>
-          <article class="hobby">
-            <strong>Entrepreneurship</strong>
-            <p>
-              Hogan Entrepreneurial Leadership, pitch practice, and startup collaboration through
-              Gonzaga’s New Venture Lab.
-            </p>
-          </article>
+            </figure>
+            <span class="hobby-stack-hint">Click to flip through</span>
+          </button>
+          <div class="hobby-grid">
+            <article class="hobby">
+              <strong>Basketball</strong>
+              <p>
+                Gonzaga Club Basketball after a De La Salle varsity career — film, footwork, and
+                sharing the game whenever I can.
+              </p>
+            </article>
+            <article class="hobby">
+              <strong>Computer Science</strong>
+              <p>
+                Building cleaner systems, exploring algorithms, and refining workflows until better
+                becomes the default.
+              </p>
+            </article>
+            <article class="hobby">
+              <strong>Travel &amp; Family</strong>
+              <p>
+                Cruise traditions, garden mazes, and new cities — adventures that keep curiosity and
+                connection alive.
+              </p>
+            </article>
+            <article class="hobby">
+              <strong>Entrepreneurship</strong>
+              <p>
+                Hogan Entrepreneurial Leadership, pitch practice, and startup collaboration through
+                Gonzaga’s New Venture Lab.
+              </p>
+            </article>
+          </div>
         </div>
       </section>
     </main>

@@ -35,6 +35,37 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  const hobbyStack = document.querySelector("[data-hobby-stack]");
+  if (hobbyStack) {
+    const cards = Array.from(hobbyStack.querySelectorAll("[data-hobby-card]"));
+    let activeIndex = 0;
+
+    const renderStack = () => {
+      const total = cards.length;
+      cards.forEach((card, index) => {
+        card.classList.remove("is-active", "is-next", "is-back");
+        card.setAttribute("aria-hidden", "true");
+
+        const offset = (index - activeIndex + total) % total;
+        if (offset === 0) {
+          card.classList.add("is-active");
+          card.setAttribute("aria-hidden", "false");
+        } else if (offset === 1) {
+          card.classList.add("is-next");
+        } else {
+          card.classList.add("is-back");
+        }
+      });
+    };
+
+    hobbyStack.addEventListener("click", () => {
+      activeIndex = (activeIndex + 1) % cards.length;
+      renderStack();
+    });
+
+    renderStack();
+  }
+
   const mapEl = document.getElementById("journey-map");
   if (mapEl && window.L) {
     const map = L.map(mapEl, {

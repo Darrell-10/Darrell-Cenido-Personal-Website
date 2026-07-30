@@ -695,31 +695,90 @@ h3 {
 
 .hobby-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
+}
+
+.hobbies-layout {
+  display: grid;
+  grid-template-columns: minmax(15rem, 0.9fr) 1.2fr;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.hobby-stack {
+  position: relative;
+  width: min(100%, 22rem);
+  aspect-ratio: 4 / 5;
+  margin: 0.75rem auto 0.4rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  display: block;
+}
+
+.hobby-stack-card {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  border-radius: 22px;
+  overflow: hidden;
+  background: var(--clay);
+  box-shadow: var(--raise);
+  transition: transform 0.35s ease, opacity 0.35s ease, z-index 0s linear 0.15s;
+  transform-origin: center bottom;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hobby-stack-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.hobby-stack-card.is-active {
+  opacity: 1;
+  transform: translate(0, 0) rotate(0deg);
+  z-index: 3;
+  pointer-events: auto;
+  transition-delay: 0s;
+}
+
+.hobby-stack-card.is-next {
+  opacity: 1;
+  transform: translate(0.7rem, 0.55rem) rotate(3.5deg);
+  z-index: 2;
+}
+
+.hobby-stack-card.is-back {
+  opacity: 1;
+  transform: translate(-0.65rem, 0.7rem) rotate(-3deg);
+  z-index: 1;
+}
+
+.hobby-stack-hint {
+  position: absolute;
+  left: 50%;
+  bottom: -1.55rem;
+  transform: translateX(-50%);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  white-space: nowrap;
+  pointer-events: none;
 }
 
 .hobby {
   border-top: 0;
   position: relative;
   overflow: hidden;
-}
-
-.hobby-media {
-  margin: -1.25rem -1.25rem 1rem;
-  aspect-ratio: 1 / 1;
-  height: auto;
-  overflow: hidden;
-  border-radius: 24px 24px 0 0;
-  background: var(--navy);
-}
-
-.hobby-media img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
 }
 
 .hobby::before {
@@ -730,10 +789,6 @@ h3 {
   border-radius: 999px;
   background: var(--baby-blue);
   margin-bottom: 0.9rem;
-}
-
-.hobby:has(.hobby-media)::before {
-  display: none;
 }
 
 .hobby strong {
@@ -1032,12 +1087,17 @@ h3 {
   .gallery-grid,
   .experience-grid,
   .hobby-grid,
+  .hobbies-layout,
   .card-grid {
     grid-template-columns: 1fr;
   }
 
   .media-strip img {
     height: 220px;
+  }
+
+  .hobby-stack {
+    margin-bottom: 2rem;
   }
 
   .hobby-grid,
