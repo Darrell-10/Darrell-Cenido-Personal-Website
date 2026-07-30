@@ -1172,8 +1172,9 @@ h3 {
 
 .resume-intro p {
   white-space: normal;
-  max-width: 42rem;
+  max-width: none;
   text-align: center;
+  line-height: 1.55;
 }
 
 @media (max-width: 720px) {
