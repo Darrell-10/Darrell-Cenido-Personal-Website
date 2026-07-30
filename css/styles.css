@@ -1453,10 +1453,6 @@ h3 {
     min-height: 0;
   }
 
-  .tweet-filler {
-    display: none;
-  }
-
   .tweets-gallery-wall .twitter-embed-wrap,
   .tweets-gallery-wall .tweet-featured {
     position: static;
