@@ -170,7 +170,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     stopButtons.forEach((btn) => {
       const index = Number(btn.dataset.stop);
-      btn.addEventListener("click", () => goToStop(index, { openPopup: true }));
+      // Map movement is click-only — hover is visual feedback only.
+      btn.addEventListener("click", (event) => {
+        event.preventDefault();
+        goToStop(index, { openPopup: true });
+      });
     });
   }
 });

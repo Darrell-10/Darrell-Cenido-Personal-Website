@@ -1051,12 +1051,17 @@ h3 {
 }
 
 .journey-stop:hover,
-.journey-stop:focus-visible,
-.journey-stop.is-active {
-  background: color-mix(in srgb, var(--baby-blue) 18%, transparent);
-  border-left-color: var(--navy);
+.journey-stop:focus-visible {
+  background: color-mix(in srgb, var(--baby-blue) 12%, transparent);
+  border-left-color: var(--navy-soft);
   outline: none;
   transform: translateX(2px);
+}
+
+.journey-stop.is-active {
+  background: color-mix(in srgb, var(--baby-blue) 22%, transparent);
+  border-left-color: var(--navy);
+  outline: none;
 }
 
 .journey-stop strong {
