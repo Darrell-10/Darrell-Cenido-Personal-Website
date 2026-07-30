@@ -990,6 +990,54 @@ h3 {
   border: 0;
 }
 
+.journey-stops {
+  display: grid;
+  gap: 0.65rem;
+  align-content: start;
+  padding: 0.15rem 0;
+}
+
+.journey-stop {
+  display: grid;
+  gap: 0.28rem;
+  width: 100%;
+  text-align: left;
+  padding: 0.85rem 1rem;
+  border: 0;
+  border-left: 3px solid var(--baby-blue);
+  border-radius: 0 14px 14px 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.journey-stop:hover,
+.journey-stop:focus-visible,
+.journey-stop.is-active {
+  background: color-mix(in srgb, var(--baby-blue) 18%, transparent);
+  border-left-color: var(--navy);
+  outline: none;
+  transform: translateX(2px);
+}
+
+.journey-stop strong {
+  display: block;
+  color: var(--ink);
+  font-family: var(--font-sans);
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  font-size: 0.95rem;
+}
+
+.journey-stop span {
+  color: var(--ink-muted);
+  font-size: 0.92rem;
+  font-weight: 500;
+  line-height: 1.45;
+}
+
 .timeline {
   list-style: none;
   margin: 1rem 0 0;

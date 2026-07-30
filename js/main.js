@@ -94,55 +94,73 @@ document.addEventListener("DOMContentLoaded", () => {
         title: "Mountain House, CA",
         detail:
           "Bethany Elementary School — hometown roots where the journey began.",
+        zoom: 11,
       },
       {
         coords: [37.97798, -122.03107],
         title: "Concord, CA",
         detail:
           "De La Salle High School — CS &amp; math tutoring in the Learning Center, API Club president, and varsity basketball.",
+        zoom: 12,
       },
       {
         coords: [47.6671, -117.4024],
         title: "Spokane, WA",
         detail:
           "Gonzaga University — B.S. Computer Science &amp; Hogan Entrepreneurial Leadership, Club Basketball, Class of 2028. Code Lexica via New Venture Lab — ICP research, pitch-deck feedback, and an ROI calculator for sales enablement.",
+        zoom: 11,
       },
       {
         coords: [36.9741, -122.0308],
         title: "Santa Cruz, CA",
         detail:
           "BrandCapsule — AI-Native Marketing Intern building lifecycle email systems, KPI dashboards, and AI Discovery Intelligence for brand growth.",
+        zoom: 12,
       },
     ];
 
-    const latLngs = stops.map((stop) => {
+    const markers = stops.map((stop) => {
       const marker = L.circleMarker(stop.coords, markerStyle).addTo(map);
       marker.bindPopup(`<strong>${stop.title}</strong><br>${stop.detail}`);
-      return stop.coords;
+      return marker;
     });
 
-    L.polyline(latLngs, {
-      color: "#3b2414",
-      weight: 3,
-      opacity: 0.75,
-      dashArray: "8 10",
-    }).addTo(map);
+    L.polyline(
+      stops.map((stop) => stop.coords),
+      {
+        color: "#3b2414",
+        weight: 3,
+        opacity: 0.75,
+        dashArray: "8 10",
+      }
+    ).addTo(map);
 
-    const californiaStops = [stops[0].coords, stops[1].coords, stops[3].coords];
-    map.fitBounds(L.latLngBounds(latLngs).pad(0.2));
+    map.fitBounds(L.latLngBounds(stops.map((stop) => stop.coords)).pad(0.2));
 
-    const spokaneBtn = document.getElementById("show-spokane");
-    if (spokaneBtn) {
-      spokaneBtn.addEventListener("click", () => {
-        map.flyTo(stops[2].coords, 10, { duration: 1.4 });
-      });
-    }
+    const stopButtons = Array.from(document.querySelectorAll(".journey-stop"));
+    let activeIndex = -1;
 
-    const californiaBtn = document.getElementById("show-california");
-    if (californiaBtn) {
-      californiaBtn.addEventListener("click", () => {
-        map.flyToBounds(L.latLngBounds(californiaStops).pad(0.35), { duration: 1.2 });
-      });
-    }
+    const goToStop = (index, { openPopup = false } = {}) => {
+      const stop = stops[index];
+      const marker = markers[index];
+      if (!stop || !marker) return;
+
+      if (activeIndex !== index) {
+        activeIndex = index;
+        stopButtons.forEach((btn, i) => btn.classList.toggle("is-active", i === index));
+        map.flyTo(stop.coords, stop.zoom, { duration: 1.1 });
+      }
+
+      if (openPopup) {
+        marker.openPopup();
+      }
+    };
+
+    stopButtons.forEach((btn) => {
+      const index = Number(btn.dataset.stop);
+      btn.addEventListener("mouseenter", () => goToStop(index));
+      btn.addEventListener("focus", () => goToStop(index));
+      btn.addEventListener("click", () => goToStop(index, { openPopup: true }));
+    });
   }
 });
