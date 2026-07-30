@@ -1981,7 +1981,7 @@ h3 {
   }
 
   .tweets-gallery-wall .twitter-embed-wrap:not(.tweet-featured) {
-    --tweet-scale: 0.78;
+    --tweet-scale: 0.84;
   }
 
   .tweets-gallery-wall .tweet-featured,
