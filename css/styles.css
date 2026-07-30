@@ -802,7 +802,8 @@ h3 {
 .hobby-stack-hint {
   position: absolute;
   left: 50%;
-  bottom: -1.7rem;
+  top: calc(100% + 1.55rem);
+  bottom: auto;
   transform: translateX(-50%);
   font-size: 0.68rem;
   font-weight: 700;
@@ -811,6 +812,7 @@ h3 {
   color: var(--ink-faint);
   white-space: nowrap;
   pointer-events: none;
+  z-index: 4;
 }
 
 .hobby-copy {
@@ -1156,7 +1158,7 @@ h3 {
   }
 
   .hobby-stack {
-    margin-bottom: 2rem;
+    margin-bottom: 3.25rem;
   }
 
   .hobby-grid,
