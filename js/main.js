@@ -140,6 +140,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const stopButtons = Array.from(document.querySelectorAll(".journey-stop"));
     let activeIndex = -1;
 
+    const flyOptions = {
+      duration: 2.8,
+      easeLinearity: 0.12,
+    };
+
     const goToStop = (index, { openPopup = false } = {}) => {
       const stop = stops[index];
       const marker = markers[index];
@@ -148,7 +153,14 @@ document.addEventListener("DOMContentLoaded", () => {
       if (activeIndex !== index) {
         activeIndex = index;
         stopButtons.forEach((btn, i) => btn.classList.toggle("is-active", i === index));
-        map.flyTo(stop.coords, stop.zoom, { duration: 1.1 });
+        map.flyTo(stop.coords, stop.zoom, flyOptions);
+
+        if (openPopup) {
+          map.once("moveend", () => {
+            if (activeIndex === index) marker.openPopup();
+          });
+        }
+        return;
       }
 
       if (openPopup) {

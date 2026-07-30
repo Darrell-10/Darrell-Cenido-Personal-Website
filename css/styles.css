@@ -140,7 +140,7 @@ a:hover {
 .site-header {
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 2000;
   padding: 0;
   background: linear-gradient(180deg, #1a0e08 0%, #2a160c 55%, #241209 100%);
   border-bottom: 1px solid rgba(232, 213, 183, 0.08);
@@ -982,12 +982,44 @@ h3 {
 }
 
 #journey-map {
+  position: relative;
+  z-index: 0;
+  isolation: isolate;
   height: 480px;
   border-radius: 24px;
   overflow: hidden;
   box-shadow: var(--raise);
   background: var(--tan);
   border: 0;
+}
+
+#journey-map .leaflet-container,
+#journey-map .leaflet-pane,
+#journey-map .leaflet-top,
+#journey-map .leaflet-bottom,
+#journey-map .leaflet-control {
+  z-index: auto;
+}
+
+#journey-map .leaflet-tile-pane {
+  z-index: 1;
+}
+
+#journey-map .leaflet-overlay-pane {
+  z-index: 2;
+}
+
+#journey-map .leaflet-marker-pane,
+#journey-map .leaflet-tooltip-pane {
+  z-index: 3;
+}
+
+#journey-map .leaflet-popup-pane {
+  z-index: 4;
+}
+
+#journey-map .leaflet-control-container {
+  z-index: 5;
 }
 
 .journey-stops {
