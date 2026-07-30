@@ -13,21 +13,35 @@ A GitHub Pages personal site for Darrell Cenido with:
 - Dark navy accents `#0F1C2E`
 - Light baby blue accents `#A8D5E5`
 
-## Local preview
+## Enable GitHub Pages (one-time)
 
-Open `index.html` in a browser, or serve the folder:
+The site files are already on `main`. Turn on Pages once in GitHub:
+
+1. Open [repository Settings → Pages](https://github.com/Darrell-10/Darrell-Cenido-Personal-Website/settings/pages)
+2. Under **Build and deployment**:
+   - **Source:** Deploy from a branch
+   - **Branch:** `main` / folder: `/ (root)`
+3. Save
+
+Your site will publish at:
+
+**https://darrell-10.github.io/Darrell-Cenido-Personal-Website/**
+
+Optional: if you prefer GitHub Actions deploys, set Source to **GitHub Actions** instead, then re-run the `Deploy GitHub Pages` workflow.
+
+## Local preview
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Then visit `http://localhost:8000`.
+Visit `http://localhost:8000`.
 
-## GitHub Pages
+## Site map
 
-1. Repository Settings → Pages
-2. Source: **Deploy from a branch**
-3. Branch: `main` / folder: `/ (root)`
-4. Site will publish at `https://darrell-10.github.io/Darrell-Cenido-Personal-Website/`
-
-If you use a custom domain later, add a `CNAME` file in the repo root.
+| Page | File |
+|------|------|
+| About Me | `index.html` |
+| Professional Life | `professional.html` |
+| Gallery | `gallery.html` |
+| Resume PDF | `assets/Darrell_Cenido_Resume.pdf` |
