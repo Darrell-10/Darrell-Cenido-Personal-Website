@@ -1398,8 +1398,8 @@ h3 {
   z-index: 2;
   pointer-events: none;
   user-select: none;
-  opacity: 0.82;
-  translate: -18% -22%;
+  opacity: 0.38;
+  translate: -26% -30%;
   transform: rotate(var(--tilt, 0deg)) scale(var(--filler-scale, 0.84));
   transform-origin: center center;
 }
@@ -1478,7 +1478,7 @@ h3 {
   --tilt: 1.8deg;
   --filler-scale: 0.84;
   z-index: 4;
-  opacity: 0.82;
+  opacity: 0.36;
 }
 
 .tweet-filler-2 {
@@ -1487,7 +1487,7 @@ h3 {
   --tilt: -1.6deg;
   --filler-scale: 0.84;
   z-index: 4;
-  opacity: 0.82;
+  opacity: 0.32;
 }
 
 .tweet-filler-3 {
@@ -1496,7 +1496,7 @@ h3 {
   --tilt: 1.8deg;
   --filler-scale: 0.84;
   z-index: 4;
-  opacity: 0.82;
+  opacity: 0.4;
 }
 
 .tweet-filler-4 {
@@ -1505,7 +1505,7 @@ h3 {
   --tilt: -1.6deg;
   --filler-scale: 0.84;
   z-index: 4;
-  opacity: 0.82;
+  opacity: 0.32;
 }
 
 .tweet-filler-5 {
@@ -1514,7 +1514,7 @@ h3 {
   --tilt: 1.8deg;
   --filler-scale: 0.84;
   z-index: 4;
-  opacity: 0.82;
+  opacity: 0.36;
 }
 
 .tweet-filler-6 {
@@ -1523,7 +1523,7 @@ h3 {
   --tilt: -1.6deg;
   --filler-scale: 0.84;
   z-index: 4;
-  opacity: 0.82;
+  opacity: 0.32;
 }
 
 .tweet-filler-7 {
@@ -1532,7 +1532,7 @@ h3 {
   --tilt: 1.8deg;
   --filler-scale: 0.84;
   z-index: 4;
-  opacity: 0.82;
+  opacity: 0.36;
 }
 
 .tweet-filler-8 {
@@ -1541,7 +1541,7 @@ h3 {
   --tilt: -1.6deg;
   --filler-scale: 0.84;
   z-index: 4;
-  opacity: 0.82;
+  opacity: 0.32;
 }
 
 .tweet-filler-9 {
@@ -1550,7 +1550,7 @@ h3 {
   --tilt: 1.8deg;
   --filler-scale: 0.84;
   z-index: 4;
-  opacity: 0.82;
+  opacity: 0.4;
 }
 
 .tweet-filler-10 {
@@ -1559,7 +1559,7 @@ h3 {
   --tilt: -1.6deg;
   --filler-scale: 0.84;
   z-index: 4;
-  opacity: 0.82;
+  opacity: 0.32;
 }
 
 .tweet-filler-11 {
@@ -1568,7 +1568,7 @@ h3 {
   --tilt: 1.8deg;
   --filler-scale: 0.84;
   z-index: 4;
-  opacity: 0.82;
+  opacity: 0.36;
 }
 
 .tweet-filler-12 {
@@ -1577,7 +1577,7 @@ h3 {
   --tilt: -1.6deg;
   --filler-scale: 0.84;
   z-index: 4;
-  opacity: 0.82;
+  opacity: 0.32;
 }
 
 .tweet-filler-13 {
@@ -1586,7 +1586,7 @@ h3 {
   --tilt: 1.8deg;
   --filler-scale: 0.84;
   z-index: 4;
-  opacity: 0.82;
+  opacity: 0.36;
 }
 
 .tweet-filler-14 {
@@ -1595,7 +1595,7 @@ h3 {
   --tilt: -1.6deg;
   --filler-scale: 0.84;
   z-index: 4;
-  opacity: 0.82;
+  opacity: 0.32;
 }
 
 .tweet-filler-15 {
@@ -1604,7 +1604,7 @@ h3 {
   --tilt: -1.5deg;
   --filler-scale: 0.84;
   z-index: 5;
-  opacity: 0.80;
+  opacity: 0.4;
 }
 
 .tweet-filler-16 {
@@ -1613,7 +1613,7 @@ h3 {
   --tilt: 1.7deg;
   --filler-scale: 0.84;
   z-index: 5;
-  opacity: 0.80;
+  opacity: 0.32;
 }
 
 .tweet-filler-17 {
@@ -1622,7 +1622,7 @@ h3 {
   --tilt: -1.5deg;
   --filler-scale: 0.84;
   z-index: 5;
-  opacity: 0.80;
+  opacity: 0.36;
 }
 
 .tweet-filler-18 {
@@ -1631,7 +1631,7 @@ h3 {
   --tilt: 1.7deg;
   --filler-scale: 0.84;
   z-index: 5;
-  opacity: 0.80;
+  opacity: 0.32;
 }
 
 .tweet-filler-19 {
@@ -1640,7 +1640,7 @@ h3 {
   --tilt: -1.5deg;
   --filler-scale: 0.84;
   z-index: 5;
-  opacity: 0.80;
+  opacity: 0.36;
 }
 
 .tweet-filler-20 {
@@ -1649,7 +1649,7 @@ h3 {
   --tilt: 1.7deg;
   --filler-scale: 0.84;
   z-index: 5;
-  opacity: 0.80;
+  opacity: 0.32;
 }
 
 .tweet-filler-21 {
@@ -1658,7 +1658,7 @@ h3 {
   --tilt: -1.5deg;
   --filler-scale: 0.84;
   z-index: 5;
-  opacity: 0.80;
+  opacity: 0.4;
 }
 
 .tweet-filler-22 {
@@ -1667,7 +1667,7 @@ h3 {
   --tilt: 1.7deg;
   --filler-scale: 0.84;
   z-index: 5;
-  opacity: 0.80;
+  opacity: 0.32;
 }
 
 .tweet-filler-23 {
@@ -1676,7 +1676,7 @@ h3 {
   --tilt: -1.5deg;
   --filler-scale: 0.84;
   z-index: 5;
-  opacity: 0.80;
+  opacity: 0.36;
 }
 
 .tweet-filler-24 {
@@ -1685,7 +1685,7 @@ h3 {
   --tilt: 1.7deg;
   --filler-scale: 0.84;
   z-index: 5;
-  opacity: 0.80;
+  opacity: 0.32;
 }
 
 .tweet-filler-25 {
@@ -1694,7 +1694,7 @@ h3 {
   --tilt: -1.5deg;
   --filler-scale: 0.84;
   z-index: 5;
-  opacity: 0.80;
+  opacity: 0.36;
 }
 
 .tweet-filler-26 {
@@ -1703,7 +1703,7 @@ h3 {
   --tilt: 1.7deg;
   --filler-scale: 0.84;
   z-index: 5;
-  opacity: 0.80;
+  opacity: 0.32;
 }
 
 .tweet-filler-27 {
@@ -1712,7 +1712,7 @@ h3 {
   --tilt: -1.5deg;
   --filler-scale: 0.84;
   z-index: 5;
-  opacity: 0.80;
+  opacity: 0.4;
 }
 
 .tweet-filler-28 {
@@ -1721,7 +1721,7 @@ h3 {
   --tilt: 1.7deg;
   --filler-scale: 0.84;
   z-index: 5;
-  opacity: 0.80;
+  opacity: 0.32;
 }
 
 .tweets-gallery-wall .twitter-embed-wrap:hover {
