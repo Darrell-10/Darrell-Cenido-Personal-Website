@@ -701,16 +701,16 @@ h3 {
 
 .hobbies-layout {
   display: grid;
-  grid-template-columns: minmax(15rem, 0.9fr) 1.2fr;
-  gap: 1.5rem;
+  grid-template-columns: minmax(15rem, 0.85fr) 1.25fr;
+  gap: 2rem;
   align-items: center;
 }
 
 .hobby-stack {
   position: relative;
-  width: min(100%, 22rem);
+  width: min(100%, 20rem);
   aspect-ratio: 4 / 5;
-  margin: 0.75rem auto 0.4rem;
+  margin: 1.1rem auto 1.6rem;
   padding: 0;
   border: 0;
   background: transparent;
@@ -722,15 +722,17 @@ h3 {
   position: absolute;
   inset: 0;
   margin: 0;
-  border-radius: 22px;
+  padding: 0.7rem 0.7rem 1.7rem;
+  border-radius: 4px;
   overflow: hidden;
-  background: var(--clay);
-  box-shadow: var(--raise);
-  transition: transform 0.35s ease, opacity 0.35s ease, z-index 0s linear 0.15s;
-  transform-origin: center bottom;
+  background: #fff;
+  box-shadow: 0 10px 24px rgba(34, 23, 16, 0.18), 0 2px 6px rgba(34, 23, 16, 0.08);
+  transition: transform 0.4s ease, opacity 0.35s ease, filter 0.35s ease;
+  transform-origin: center center;
   opacity: 0;
   pointer-events: none;
   z-index: 1;
+  filter: brightness(0.96);
 }
 
 .hobby-stack-card img {
@@ -739,32 +741,35 @@ h3 {
   object-fit: cover;
   object-position: center;
   display: block;
+  border-radius: 1px;
 }
 
 .hobby-stack-card.is-active {
   opacity: 1;
-  transform: translate(0, 0) rotate(0deg);
+  transform: translate(0, 0) rotate(-3.5deg);
   z-index: 3;
   pointer-events: auto;
-  transition-delay: 0s;
+  filter: brightness(1);
 }
 
 .hobby-stack-card.is-next {
   opacity: 1;
-  transform: translate(0.7rem, 0.55rem) rotate(3.5deg);
+  transform: translate(0.95rem, 0.55rem) rotate(5deg);
   z-index: 2;
+  filter: brightness(0.94);
 }
 
 .hobby-stack-card.is-back {
   opacity: 1;
-  transform: translate(-0.65rem, 0.7rem) rotate(-3deg);
+  transform: translate(-0.85rem, 0.75rem) rotate(-8deg);
   z-index: 1;
+  filter: brightness(0.9);
 }
 
 .hobby-stack-hint {
   position: absolute;
   left: 50%;
-  bottom: -1.55rem;
+  bottom: -1.7rem;
   transform: translateX(-50%);
   font-size: 0.68rem;
   font-weight: 700;
@@ -773,6 +778,27 @@ h3 {
   color: var(--ink-faint);
   white-space: nowrap;
   pointer-events: none;
+}
+
+.hobby-copy {
+  display: grid;
+  gap: 1rem;
+}
+
+.hobby-copy p {
+  margin: 0;
+  color: var(--ink-muted);
+  font-size: 1.02rem;
+  line-height: 1.65;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: 0;
+  max-width: 40rem;
+}
+
+.hobby-copy em {
+  font-style: italic;
+  color: var(--ink);
 }
 
 .hobby {
