@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (mapEl && window.L) {
     const map = L.map(mapEl, {
       scrollWheelZoom: false,
-    }).setView([37.7, -121.95], 9);
+    }).setView([40.5, -118.5], 5);
 
     L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
       attribution:
@@ -93,43 +93,25 @@ document.addEventListener("DOMContentLoaded", () => {
         coords: [37.7805, -121.5425],
         title: "Mountain House, CA",
         detail:
-          "Home base — where family support and early habits of deliberate improvement began.",
+          "Bethany Elementary School — hometown roots where the journey began.",
       },
       {
         coords: [37.97798, -122.03107],
-        title: "Concord, CA — De La Salle",
+        title: "Concord, CA",
         detail:
-          "High school leadership, tutoring, varsity basketball, and track & field foundation.",
-      },
-      {
-        coords: [37.8044, -122.2712],
-        title: "Oakland / East Bay",
-        detail:
-          "Oakland Soldiers roots and Bay Area basketball grind that shaped my competitive foundation.",
-      },
-      {
-        coords: [37.7652, -122.2416],
-        title: "Alameda College",
-        detail:
-          "Championship tournament moment — last-second layup that sealed the win and deepened my love for the game.",
+          "De La Salle High School — CS &amp; math tutoring in the Learning Center, API Club president, and varsity basketball.",
       },
       {
         coords: [47.6671, -117.4024],
-        title: "Spokane, WA — Gonzaga",
+        title: "Spokane, WA",
         detail:
-          "Computer Science & Hogan Entrepreneurial Leadership · Club Basketball · Class of 2028.",
+          "Gonzaga University — B.S. Computer Science &amp; Hogan Entrepreneurial Leadership, Club Basketball, Class of 2028. Code Lexica via New Venture Lab — ICP research, pitch-deck feedback, and an ROI calculator for sales enablement.",
       },
       {
-        coords: [37.7749, -122.4194],
-        title: "Bay Area startups & AI work",
+        coords: [36.9741, -122.0308],
+        title: "Santa Cruz, CA",
         detail:
-          "Code Lexica consulting through New Venture Lab and AI-Native Marketing Internship at BrandCapsule.",
-      },
-      {
-        coords: [48.8049, 2.1204],
-        title: "Versailles, France",
-        detail:
-          "Travel milestone — exploring the garden maze and discovering joy in unfamiliar paths.",
+          "BrandCapsule — AI-Native Marketing Intern building lifecycle email systems, KPI dashboards, and AI Discovery Intelligence for brand growth.",
       },
     ];
 
@@ -139,27 +121,27 @@ document.addEventListener("DOMContentLoaded", () => {
       return stop.coords;
     });
 
-    const bayStops = latLngs.slice(0, 4);
-    const route = L.polyline(bayStops, {
+    L.polyline(latLngs, {
       color: "#3b2414",
       weight: 3,
       opacity: 0.75,
       dashArray: "8 10",
     }).addTo(map);
 
-    map.fitBounds(L.latLngBounds(bayStops.concat([stops[4].coords])).pad(0.25));
+    const californiaStops = [stops[0].coords, stops[1].coords, stops[3].coords];
+    map.fitBounds(L.latLngBounds(latLngs).pad(0.2));
 
     const spokaneBtn = document.getElementById("show-spokane");
     if (spokaneBtn) {
       spokaneBtn.addEventListener("click", () => {
-        map.flyTo([47.6671, -117.4024], 7, { duration: 1.4 });
+        map.flyTo(stops[2].coords, 10, { duration: 1.4 });
       });
     }
 
-    const bayBtn = document.getElementById("show-bay-area");
-    if (bayBtn) {
-      bayBtn.addEventListener("click", () => {
-        map.flyToBounds(L.latLngBounds(bayStops).pad(0.25), { duration: 1.2 });
+    const californiaBtn = document.getElementById("show-california");
+    if (californiaBtn) {
+      californiaBtn.addEventListener("click", () => {
+        map.flyToBounds(L.latLngBounds(californiaStops).pad(0.35), { duration: 1.2 });
       });
     }
   }
