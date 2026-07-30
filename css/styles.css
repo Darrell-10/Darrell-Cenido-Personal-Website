@@ -1141,6 +1141,11 @@ h3 {
 
 .footer-social-icons {
   margin-top: 0.55rem;
+  justify-content: flex-end;
+}
+
+.footer-inner > div:last-child {
+  text-align: right;
 }
 
 .footer-social-icons .social-icon {
