@@ -1061,8 +1061,21 @@ h3 {
   margin-bottom: 1.25rem;
 }
 
+.gallery-intro {
+  text-align: center;
+  display: grid;
+  justify-items: center;
+}
+
 .gallery-intro h1 {
-  max-width: 22ch;
+  max-width: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery-intro p {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .gallery-grid-featured {
