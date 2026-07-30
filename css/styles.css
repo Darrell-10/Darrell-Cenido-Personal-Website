@@ -1279,12 +1279,12 @@ h3 {
 }
 
 .tweets-gallery-wall {
-  --tweet-scale: 0.78;
+  --tweet-scale: 0.72;
   position: relative;
   width: min(980px, 100%);
   aspect-ratio: auto;
-  height: 1180px;
-  min-height: 1180px;
+  height: 1240px;
+  min-height: 1240px;
   margin: 0.25rem auto 1.75rem;
   overflow: visible;
 }
@@ -1295,112 +1295,113 @@ h3 {
 
 .tweets-gallery-wall .twitter-embed-wrap {
   position: absolute;
-  width: 220px;
+  width: 280px;
   margin: 0;
   padding: 0;
   background: transparent;
-  box-shadow: none;
   overflow: visible;
   max-height: none;
-  transition: transform 0.25s ease, filter 0.25s ease, z-index 0s;
-  filter: drop-shadow(0 10px 16px rgba(34, 23, 16, 0.14));
+  transition: transform 0.25s ease, box-shadow 0.25s ease, z-index 0s;
+  box-shadow: 0 10px 18px rgba(34, 23, 16, 0.14);
   transform: rotate(var(--tilt, 0deg)) scale(var(--tweet-scale));
   transform-origin: center center;
+  /* Avoid filter: it clips Twitter iframes in Chromium */
+  filter: none;
 }
 
 .tweets-gallery-wall .tweet-featured {
   left: 50%;
   top: 50%;
-  width: min(360px, 38%);
+  width: 360px;
   z-index: 20;
   --tilt: 0deg;
   --tweet-scale: 1;
   translate: -50% -50%;
-  filter: drop-shadow(0 18px 28px rgba(34, 23, 16, 0.2));
+  box-shadow: 0 18px 28px rgba(34, 23, 16, 0.2);
 }
 
 .tweets-gallery-wall .tweet-wall-1 {
   left: 50%;
-  top: 2%;
+  top: 1%;
   translate: -50% 0;
   z-index: 8;
   --tilt: -1.8deg;
 }
 
 .tweets-gallery-wall .tweet-wall-2 {
-  left: 70%;
-  top: 4%;
+  left: 68%;
+  top: 3%;
   z-index: 7;
   --tilt: 2.2deg;
 }
 
 .tweets-gallery-wall .tweet-wall-3 {
-  left: 78%;
-  top: 26%;
+  left: 76%;
+  top: 25%;
   z-index: 9;
   --tilt: 1.4deg;
 }
 
 .tweets-gallery-wall .tweet-wall-4 {
-  left: 76%;
-  top: 48%;
+  left: 74%;
+  top: 47%;
   z-index: 8;
   --tilt: -1.6deg;
 }
 
 .tweets-gallery-wall .tweet-wall-5 {
-  left: 63%;
-  top: 64%;
+  left: 61%;
+  top: 63%;
   z-index: 7;
   --tilt: 2deg;
 }
 
 .tweets-gallery-wall .tweet-wall-6 {
   left: 50%;
-  top: 68%;
+  top: 67%;
   translate: -50% 0;
   z-index: 8;
   --tilt: -1.3deg;
 }
 
 .tweets-gallery-wall .tweet-wall-7 {
-  left: 16%;
-  top: 63%;
+  left: 14%;
+  top: 62%;
   z-index: 7;
   --tilt: 1.7deg;
 }
 
 .tweets-gallery-wall .tweet-wall-8 {
-  left: 2%;
-  top: 45%;
+  left: 1%;
+  top: 44%;
   z-index: 9;
   --tilt: -2deg;
 }
 
 .tweets-gallery-wall .tweet-wall-9 {
-  left: 3%;
-  top: 22%;
+  left: 2%;
+  top: 21%;
   z-index: 8;
   --tilt: 1.5deg;
 }
 
 .tweets-gallery-wall .tweet-wall-10 {
-  left: 15%;
-  top: 3.5%;
+  left: 13%;
+  top: 2.5%;
   z-index: 7;
   --tilt: -2.1deg;
 }
 
 .tweets-gallery-wall .twitter-embed-wrap:hover {
-  --tweet-scale: 0.9;
+  --tweet-scale: 0.84;
   --tilt: 0deg;
   z-index: 30;
-  filter: drop-shadow(0 18px 26px rgba(34, 23, 16, 0.22));
+  box-shadow: 0 18px 26px rgba(34, 23, 16, 0.22);
 }
 
 .tweets-gallery-wall .tweet-featured:hover {
   --tweet-scale: 1.02;
-  filter: drop-shadow(0 22px 32px rgba(34, 23, 16, 0.24));
+  box-shadow: 0 22px 32px rgba(34, 23, 16, 0.24);
 }
 
 .twitter-embed-wrap {
@@ -1410,30 +1411,33 @@ h3 {
 }
 
 .twitter-tweet {
-  width: 100%;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
   margin: 0 auto !important;
   overflow: visible !important;
   max-height: none !important;
 }
 
-.twitter-tweet iframe {
-  width: 100% !important;
-  max-height: none !important;
+.tweets-gallery-wall .twitter-tweet iframe,
+.tweets-gallery-wall iframe.twitter-tweet-rendered {
+  width: 280px !important;
+  min-width: 280px !important;
+  max-width: 280px !important;
+}
+
+.tweets-gallery-wall .tweet-featured .twitter-tweet iframe,
+.tweets-gallery-wall .tweet-featured iframe.twitter-tweet-rendered {
+  width: 360px !important;
+  min-width: 360px !important;
+  max-width: 360px !important;
 }
 
 @media (max-width: 980px) {
   .tweets-gallery-wall {
-    --tweet-scale: 0.72;
-    height: 1080px;
-    min-height: 1080px;
-  }
-
-  .tweets-gallery-wall .twitter-embed-wrap {
-    width: 200px;
-  }
-
-  .tweets-gallery-wall .tweet-featured {
-    width: min(320px, 40%);
+    --tweet-scale: 0.66;
+    height: 1120px;
+    min-height: 1120px;
   }
 }
 
@@ -1458,6 +1462,7 @@ h3 {
     --tweet-scale: 1;
     transform: none;
     z-index: auto;
+    box-shadow: none;
   }
 
   .tweets-gallery-wall .tweet-featured {
@@ -1465,6 +1470,15 @@ h3 {
     width: min(100%, 360px);
     order: -1;
     margin-inline: auto;
+  }
+
+  .tweets-gallery-wall .twitter-tweet iframe,
+  .tweets-gallery-wall iframe.twitter-tweet-rendered,
+  .tweets-gallery-wall .tweet-featured .twitter-tweet iframe,
+  .tweets-gallery-wall .tweet-featured iframe.twitter-tweet-rendered {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
   }
 
   .tweets-gallery-wall .twitter-embed-wrap:hover,
