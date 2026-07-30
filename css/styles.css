@@ -1101,8 +1101,8 @@ h3 {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  width: 2px;
-  height: 1.05rem;
+  width: 2.5px;
+  height: 1.85rem;
   border-radius: 999px;
   background: var(--baby-blue);
   transition: background 0.2s ease, height 0.2s ease;
@@ -1118,7 +1118,7 @@ h3 {
 .journey-stop:hover::before,
 .journey-stop:focus-visible::before {
   background: var(--navy-soft);
-  height: 1.25rem;
+  height: 2.15rem;
 }
 
 .journey-stop.is-active {
@@ -1128,7 +1128,7 @@ h3 {
 
 .journey-stop.is-active::before {
   background: var(--navy);
-  height: 1.35rem;
+  height: 2.35rem;
 }
 
 .journey-stop strong {
