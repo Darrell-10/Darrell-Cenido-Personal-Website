@@ -1165,6 +1165,12 @@ h3 {
   white-space: nowrap;
 }
 
+.resume-intro p {
+  white-space: normal;
+  max-width: 42rem;
+  text-align: center;
+}
+
 @media (max-width: 720px) {
   .gallery-intro {
     padding-top: 1.75rem;
