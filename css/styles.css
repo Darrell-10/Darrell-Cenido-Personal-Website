@@ -433,6 +433,11 @@ h3 {
   font-weight: 500;
 }
 
+.journey-map-sub {
+  max-width: none;
+  white-space: nowrap;
+}
+
 /* Looping affiliation conveyor — logos only, no boxes */
 .conveyor-section {
   margin-bottom: 3rem;
