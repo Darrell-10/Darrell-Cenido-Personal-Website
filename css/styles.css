@@ -668,6 +668,7 @@ h3 {
 
 .statement-page {
   max-width: 46rem;
+  padding-top: 2.75rem;
 }
 
 .statement-title {
@@ -693,7 +694,15 @@ h3 {
   font-family: var(--font-sans);
 }
 
+.statement-download {
+  margin-top: 2rem;
+}
+
 @media (max-width: 720px) {
+  .statement-page {
+    padding-top: 1.75rem;
+  }
+
   .statement-title {
     white-space: normal;
   }
