@@ -949,6 +949,19 @@ h3 {
     display: inline-flex;
   }
 
+  .brand-text {
+    gap: 0.2rem 0.65rem;
+  }
+
+  .brand-text strong {
+    font-size: 1.15rem;
+  }
+
+  .brand-text span {
+    font-size: 0.68rem;
+    white-space: normal;
+  }
+
   .site-nav {
     display: none;
     position: absolute;
