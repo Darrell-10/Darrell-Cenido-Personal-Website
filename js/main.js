@@ -147,7 +147,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const allBounds = L.latLngBounds(stops.map((stop) => stop.coords));
     map.fitBounds(allBounds.pad(0.15));
-    setTimeout(() => map.invalidateSize(), 0);
+
+    const stopsEl = document.querySelector(".journey-stops");
+    const syncMapHeight = () => {
+      if (!stopsEl) return;
+      const nextHeight = Math.max(Math.round(stopsEl.getBoundingClientRect().height), 520);
+      mapEl.style.height = `${nextHeight}px`;
+      map.invalidateSize();
+    };
+
+    syncMapHeight();
+    window.addEventListener("resize", syncMapHeight);
+    setTimeout(syncMapHeight, 50);
 
     const stopButtons = Array.from(document.querySelectorAll(".journey-stop"));
     let activeIndex = -1;
