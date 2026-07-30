@@ -1118,23 +1118,24 @@ h3 {
   text-align: center;
 }
 
-.resume-sections {
-  display: grid;
-  gap: 2rem;
-  margin-bottom: 2.5rem;
+.resume-experience-grid {
+  margin-bottom: 2.75rem;
 }
 
-.resume-section-block {
+.experience-grid {
   display: grid;
-  gap: 0.9rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  align-items: stretch;
 }
 
-.resume-section-title {
-  margin: 0;
-  font-size: 1.05rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--navy);
+.experience-card {
+  min-width: 0;
+  height: 100%;
+}
+
+.experience-card h3 {
+  line-height: 1.25;
 }
 
 .resume-download {
@@ -1159,12 +1160,6 @@ h3 {
   width: 100%;
   height: 360px;
   border: 0;
-}
-
-.experience-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
 }
 
 .experience-card .meta {
