@@ -1399,6 +1399,7 @@ h3 {
   pointer-events: none;
   user-select: none;
   opacity: 0.82;
+  translate: -2.5% -3%;
   transform: rotate(var(--tilt, 0deg)) scale(var(--filler-scale, 0.84));
   transform-origin: center center;
 }
