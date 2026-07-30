@@ -59,10 +59,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const stops = [
       {
-        coords: [37.97798, -122.03107],
-        title: "Concord, CA",
+        coords: [37.7805, -121.5425],
+        title: "Mountain House, CA",
         detail:
-          "De La Salle High School — academics, leadership, varsity basketball, and track & field.",
+          "Home base — where family support and early habits of deliberate improvement began.",
+      },
+      {
+        coords: [37.97798, -122.03107],
+        title: "Concord, CA — De La Salle",
+        detail:
+          "High school leadership, tutoring, varsity basketball, and track & field foundation.",
       },
       {
         coords: [37.8044, -122.2712],
@@ -77,22 +83,16 @@ document.addEventListener("DOMContentLoaded", () => {
           "Championship tournament moment — last-second layup that sealed the win and deepened my love for the game.",
       },
       {
-        coords: [37.7022, -121.9358],
-        title: "Dublin, CA",
+        coords: [47.6671, -117.4024],
+        title: "Spokane, WA — Gonzaga",
         detail:
-          "NorCal Tip-Off stage — high-level high school competition and team highlights.",
-      },
-      {
-        coords: [38.5816, -121.4944],
-        title: "Sacramento, CA",
-        detail:
-          "EBC Sacramento and circuit showcases — early national exposure as a young hoopers.",
+          "Computer Science & Hogan Entrepreneurial Leadership · Club Basketball · Class of 2028.",
       },
       {
         coords: [37.7749, -122.4194],
-        title: "San Francisco Bay Area Service",
+        title: "Bay Area startups & AI work",
         detail:
-          "Community work across Contra Costa and San Francisco — camps, clothing drives, tutoring, and volunteering.",
+          "Code Lexica consulting through New Venture Lab and AI-Native Marketing Internship at BrandCapsule.",
       },
       {
         coords: [48.8049, 2.1204],
@@ -108,26 +108,27 @@ document.addEventListener("DOMContentLoaded", () => {
       return stop.coords;
     });
 
-    const route = L.polyline(latLngs.slice(0, 6), {
+    const bayStops = latLngs.slice(0, 4);
+    const route = L.polyline(bayStops, {
       color: "#3b2414",
       weight: 3,
       opacity: 0.75,
       dashArray: "8 10",
     }).addTo(map);
 
-    map.fitBounds(route.getBounds().pad(0.2));
+    map.fitBounds(L.latLngBounds(bayStops.concat([stops[4].coords])).pad(0.25));
 
-    const versaillesBtn = document.getElementById("show-versailles");
-    if (versaillesBtn) {
-      versaillesBtn.addEventListener("click", () => {
-        map.flyTo([48.8049, 2.1204], 6, { duration: 1.4 });
+    const spokaneBtn = document.getElementById("show-spokane");
+    if (spokaneBtn) {
+      spokaneBtn.addEventListener("click", () => {
+        map.flyTo([47.6671, -117.4024], 7, { duration: 1.4 });
       });
     }
 
     const bayBtn = document.getElementById("show-bay-area");
     if (bayBtn) {
       bayBtn.addEventListener("click", () => {
-        map.flyToBounds(route.getBounds().pad(0.2), { duration: 1.2 });
+        map.flyToBounds(L.latLngBounds(bayStops).pad(0.25), { duration: 1.2 });
       });
     }
   }
