@@ -394,7 +394,7 @@ h3 {
   font-weight: 500;
 }
 
-/* Looping affiliation conveyor — logos only */
+/* Looping affiliation conveyor — logos only, no boxes */
 .conveyor-section {
   margin-bottom: 3rem;
 }
@@ -406,7 +406,10 @@ h3 {
 .conveyor {
   position: relative;
   overflow: hidden;
-  padding: 0.85rem 0;
+  padding: 1rem 0;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
 }
 
 .conveyor-fade {
@@ -431,6 +434,7 @@ h3 {
 .conveyor-track {
   display: flex;
   width: max-content;
+  align-items: center;
   animation: conveyor-scroll 32s linear infinite;
   will-change: transform;
 }
@@ -442,40 +446,43 @@ h3 {
 .conveyor-group {
   display: flex;
   align-items: center;
-  gap: 3.25rem;
+  gap: 3.75rem;
   list-style: none;
   margin: 0;
-  padding: 0 1.625rem;
+  padding: 0 1.875rem;
 }
 
 .conveyor-item {
   flex: 0 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 5.5rem;
-  height: 4.5rem;
+  display: grid;
+  place-items: center;
+  width: 6.25rem;
+  height: 3.75rem;
   margin: 0;
   padding: 0;
-  background: none;
-  border: none;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
   box-shadow: none;
+  outline: none;
 }
 
 .conveyor-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
   max-width: 100%;
-  max-height: 4.5rem;
-  width: auto;
-  height: auto;
+  max-height: 100%;
   object-fit: contain;
+  object-position: center;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
 }
 
+/* Wordmarks get a wider slot but the same height so visual weight stays even */
 .conveyor-item-wide {
-  width: 10.5rem;
-}
-
-.conveyor-item-wide img {
-  max-height: 2.4rem;
+  width: 11.5rem;
 }
 
 @keyframes conveyor-scroll {
@@ -947,25 +954,17 @@ h3 {
   }
 
   .conveyor-group {
-    gap: 2.4rem;
-    padding: 0 1.2rem;
+    gap: 2.75rem;
+    padding: 0 1.375rem;
   }
 
   .conveyor-item {
-    width: 4.75rem;
-    height: 3.85rem;
-  }
-
-  .conveyor-item img {
-    max-height: 3.85rem;
+    width: 5.25rem;
+    height: 3.25rem;
   }
 
   .conveyor-item-wide {
-    width: 8.5rem;
-  }
-
-  .conveyor-item-wide img {
-    max-height: 2rem;
+    width: 9.25rem;
   }
 
   .conveyor-track {
