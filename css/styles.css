@@ -666,6 +666,39 @@ h3 {
   margin-bottom: 0;
 }
 
+.statement-page {
+  max-width: 46rem;
+}
+
+.statement-title {
+  font-size: clamp(2rem, 4vw, 3.1rem);
+  line-height: 1.05;
+  margin: 0.2rem 0 1.35rem;
+  white-space: nowrap;
+}
+
+.statement-prose {
+  display: grid;
+  gap: 1.05rem;
+}
+
+.statement-prose p {
+  margin: 0;
+  color: var(--ink);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: 0;
+  font-family: var(--font-sans);
+}
+
+@media (max-width: 720px) {
+  .statement-title {
+    white-space: normal;
+  }
+}
+
 .media-strip {
   display: grid;
   grid-template-columns: 1.4fr 1fr 1fr;
