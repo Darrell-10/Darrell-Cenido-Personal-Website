@@ -698,6 +698,23 @@ h3 {
 .hobby {
   border-top: 0;
   position: relative;
+  overflow: hidden;
+}
+
+.hobby-media {
+  margin: -1.25rem -1.25rem 1rem;
+  height: 10.5rem;
+  overflow: hidden;
+  border-radius: 24px 24px 0 0;
+  background: var(--navy);
+}
+
+.hobby-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
 
 .hobby::before {
@@ -708,6 +725,10 @@ h3 {
   border-radius: 999px;
   background: var(--baby-blue);
   margin-bottom: 0.9rem;
+}
+
+.hobby:has(.hobby-media)::before {
+  display: none;
 }
 
 .hobby strong {
