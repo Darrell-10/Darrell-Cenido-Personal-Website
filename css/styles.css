@@ -220,14 +220,13 @@ a:hover {
   display: inline-block;
   margin-left: 0.15rem;
   padding-left: 0.15rem;
-  font-family: var(--font-script);
-  font-size: clamp(1.85rem, 3vw, 2.35rem);
-  font-weight: 400;
-  line-height: 0.85;
-  letter-spacing: 0.02em;
+  font-family: var(--font-sans);
+  font-size: clamp(1.2rem, 2.2vw, 1.55rem);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
   color: var(--cream-light);
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
-  transform: rotate(-4deg);
   user-select: none;
 }
 
@@ -954,12 +953,9 @@ h3 {
     gap: 0.2rem 0.65rem;
   }
 
-  .brand-text strong {
-    font-size: 1.15rem;
-  }
-
+  .brand-text strong,
   .brand-number {
-    font-size: 1.7rem;
+    font-size: 1.15rem;
   }
 
   .site-nav {
