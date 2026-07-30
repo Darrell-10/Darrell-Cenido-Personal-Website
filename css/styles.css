@@ -1678,6 +1678,10 @@ h3 {
   .gallery-grid-links {
     grid-template-columns: 1fr;
   }
+
+  .gallery-articles-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 720px) {
