@@ -1284,6 +1284,24 @@ h3 {
   align-items: start;
 }
 
+.gallery-grid-featured .media-ig-item,
+.gallery-recent-trio .media-ig-item {
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  overflow: visible;
+}
+
+.gallery-grid-featured .instagram-media,
+.gallery-recent-trio .instagram-media {
+  margin: 0 auto !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  min-width: 0 !important;
+}
+
 .tweets-gallery-wall {
   --tweet-scale: 0.84;
   position: relative;
