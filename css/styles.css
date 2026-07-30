@@ -1212,13 +1212,17 @@ h3 {
     display: inline-flex;
   }
 
+  .brand-meta {
+    display: none;
+  }
+
   .brand-text {
     gap: 0.2rem 0.65rem;
   }
 
   .brand-text strong,
   .brand-number {
-    font-size: 1.15rem;
+    font-size: 1.05rem;
   }
 
   .site-nav {
@@ -1230,6 +1234,8 @@ h3 {
     width: 100vw;
     margin-left: calc(50% - 50vw);
     flex-direction: column;
+    justify-self: stretch;
+    grid-column: 1 / -1;
     background: #1f1109;
     border-radius: 0;
     border-top: 1px solid rgba(245, 230, 211, 0.1);
