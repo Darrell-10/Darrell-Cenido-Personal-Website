@@ -170,8 +170,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     stopButtons.forEach((btn) => {
       const index = Number(btn.dataset.stop);
-      btn.addEventListener("mouseenter", () => goToStop(index));
-      btn.addEventListener("focus", () => goToStop(index));
       btn.addEventListener("click", () => goToStop(index, { openPopup: true }));
     });
   }
