@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Darrell Cenido | Professional Life</title>
+    <meta
+      name="description"
+      content="Darrell Cenido's professional journey — education, leadership, athletics, and resume."
+    />
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="nav-wrap">
+        <a class="brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">DC</span>
+          <span class="brand-text">
+            <strong>Darrell Cenido</strong>
+            <span>Student · Athlete · Builder</span>
+          </span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          Menu
+        </button>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="index.html">About Me</a>
+          <a class="active" href="professional.html">Professional Life</a>
+          <a href="gallery.html">Gallery</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero">
+        <span class="eyebrow">Professional Life</span>
+        <h1>Let's make an impact together</h1>
+        <p>
+          From Concord classrooms and championship courts to community service across the Bay Area,
+          this page maps the places and roles that shaped my path — plus a resume you can download
+          anytime.
+        </p>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <h2>Journey map</h2>
+            <p>
+              Click markers to explore milestones across the East Bay, Sacramento, San Francisco,
+              and beyond.
+            </p>
+          </div>
+          <div class="hero-actions">
+            <button class="btn btn-navy" type="button" id="show-bay-area">Bay Area path</button>
+            <button class="btn btn-primary" type="button" id="show-versailles">Versailles stop</button>
+          </div>
+        </div>
+
+        <div class="split">
+          <div id="journey-map" role="region" aria-label="Interactive map of Darrell's journey"></div>
+          <aside class="map-panel">
+            <h3>Milestone trail</h3>
+            <ul class="timeline">
+              <li>
+                <strong>Concord — De La Salle High School</strong>
+                <span>GPA 4.26 · API Club President · Varsity Basketball &amp; Track</span>
+              </li>
+              <li>
+                <strong>Oakland / East Bay circuit</strong>
+                <span>Oakland Soldiers foundation and competitive Bay Area basketball</span>
+              </li>
+              <li>
+                <strong>Alameda College tournament</strong>
+                <span>Last-second championship layup that locked in a lifelong love for the game</span>
+              </li>
+              <li>
+                <strong>Dublin &amp; Sacramento showcases</strong>
+                <span>NorCal Tip-Off and EBC stages for high-level competition</span>
+              </li>
+              <li>
+                <strong>Bay Area service</strong>
+                <span>Camps, clothing drives, tutoring, and community volunteering</span>
+              </li>
+              <li>
+                <strong>Versailles, France</strong>
+                <span>Travel and discovery through the garden maze</span>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <h2>Resume</h2>
+            <p>Preview below, then download a PDF copy for applications and outreach.</p>
+          </div>
+        </div>
+        <div class="split">
+          <div class="resume-panel">
+            <h3>Darrell Cenido — Resume</h3>
+            <p>
+              Education, leadership roles, athletics, awards, and community service in one place.
+            </p>
+            <div class="resume-preview">
+              <iframe
+                title="Darrell Cenido resume preview"
+                src="assets/Darrell_Cenido_Resume.pdf"
+              ></iframe>
+            </div>
+            <div class="hero-actions" style="justify-content: center">
+              <a class="btn btn-primary" href="assets/Darrell_Cenido_Resume.pdf" download>
+                Download Resume (PDF)
+              </a>
+              <a
+                class="btn btn-navy"
+                href="https://docs.google.com/document/d/1zF4Oxa-9rlFWVND5jwsgNfQsdAFGje39Gxz5_3KUa7w/edit"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Open in Google Docs
+              </a>
+            </div>
+          </div>
+          <aside class="map-panel">
+            <h3>Quick highlights</h3>
+            <ul class="timeline">
+              <li>
+                <strong>Education</strong>
+                <span>De La Salle High School, Concord, CA — May 2024</span>
+              </li>
+              <li>
+                <strong>Coursework</strong>
+                <span>Intro CS · AP CSP · AP Computer Science A</span>
+              </li>
+              <li>
+                <strong>Selected awards</strong>
+                <span>
+                  Brother Visitor's Lasallian Award · DAR Good Citizen · Defensive Player of the Year
+                </span>
+              </li>
+              <li>
+                <strong>Contact</strong>
+                <span><a href="mailto:darrell.cenido@gmail.com">darrell.cenido@gmail.com</a></span>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <h2>Experience &amp; impact</h2>
+            <p>Roles where leadership, culture, and competition came together.</p>
+          </div>
+        </div>
+        <div class="experience-grid">
+          <article class="experience-card">
+            <h3>Asian Pacific Islander Club</h3>
+            <div class="meta">President · De La Salle High School</div>
+            <p>
+              Organized cultural showcases, Filipino potlucks, board games, and Nintendo Switch
+              tournaments that celebrated Asian and Pacific Islander identity.
+            </p>
+          </article>
+          <article class="experience-card">
+            <h3>Kairos Retreat</h3>
+            <div class="meta">Student Leader · Main Speaker &amp; Music Coordinator</div>
+            <p>
+              Led the “Knowing Yourself” talk and coordinated music for a multi-day retreat rooted
+              in faith, reflection, and brotherhood.
+            </p>
+          </article>
+          <article class="experience-card">
+            <h3>SCORE &amp; OnBoard!</h3>
+            <div class="meta">Student Leader · Peer Education &amp; Mentorship</div>
+            <p>
+              Facilitated workshops on respect and inclusion, and modeled values for incoming and
+              transfer students.
+            </p>
+          </article>
+          <article class="experience-card">
+            <h3>Varsity Athletics</h3>
+            <div class="meta">Basketball &amp; Track and Field</div>
+            <p>
+              Grew from 5'7" freshman point guard to 6'3"+ wing; competed in 110m/300m hurdles with
+              NCS championships and All-League recognition.
+            </p>
+          </article>
+          <article class="experience-card">
+            <h3>National Honor Society</h3>
+            <div class="meta">Lifetime Member · 75+ service hours</div>
+            <p>
+              Tutoring and service across campus and community, paired with California Scholarship
+              Federation involvement.
+            </p>
+          </article>
+          <article class="experience-card">
+            <h3>Community Events</h3>
+            <div class="meta">Volunteer · Contra Costa &amp; San Francisco</div>
+            <p>
+              Basketball camps, I Can Bike, Tenderloin clothing drives, book readings, tree planting,
+              and Diablo restoration projects.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div>
+          <strong>Darrell Cenido</strong>
+          <p>Building with heart, competing with discipline, serving with purpose.</p>
+        </div>
+        <div>
+          <a href="mailto:darrell.cenido@gmail.com">darrell.cenido@gmail.com</a><br />
+          <a href="assets/Darrell_Cenido_Resume.pdf" download>Download Resume</a>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
