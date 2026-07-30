@@ -1399,7 +1399,7 @@ h3 {
   pointer-events: none;
   user-select: none;
   opacity: 1;
-  translate: -55% -62%;
+  translate: -55% -74%;
   transform: rotate(var(--tilt, 0deg)) scale(var(--filler-scale, 0.84));
   transform-origin: center center;
 }
@@ -1474,7 +1474,7 @@ h3 {
 /* Filler ring around centerpiece (looser surround) */
 .tweet-filler-1 {
   left: 50.0%;
-  top: 18.5%;
+  top: 14.0%;
   --tilt: 1.8deg;
   --filler-scale: 0.84;
   z-index: 4;
@@ -1482,8 +1482,8 @@ h3 {
 }
 
 .tweet-filler-2 {
-  left: 65.5%;
-  top: 22.2%;
+  left: 68.0%;
+  top: 18.3%;
   --tilt: -1.6deg;
   --filler-scale: 0.84;
   z-index: 4;
@@ -1491,8 +1491,8 @@ h3 {
 }
 
 .tweet-filler-3 {
-  left: 76.8%;
-  top: 32.2%;
+  left: 81.2%;
+  top: 30.0%;
   --tilt: 1.8deg;
   --filler-scale: 0.84;
   z-index: 4;
@@ -1500,7 +1500,7 @@ h3 {
 }
 
 .tweet-filler-4 {
-  left: 81.0%;
+  left: 86.0%;
   top: 46.0%;
   --tilt: -1.6deg;
   --filler-scale: 0.84;
@@ -1509,8 +1509,8 @@ h3 {
 }
 
 .tweet-filler-5 {
-  left: 76.8%;
-  top: 59.8%;
+  left: 81.2%;
+  top: 62.0%;
   --tilt: 1.8deg;
   --filler-scale: 0.84;
   z-index: 4;
@@ -1518,8 +1518,8 @@ h3 {
 }
 
 .tweet-filler-6 {
-  left: 65.5%;
-  top: 69.8%;
+  left: 68.0%;
+  top: 73.7%;
   --tilt: -1.6deg;
   --filler-scale: 0.84;
   z-index: 4;
@@ -1528,7 +1528,7 @@ h3 {
 
 .tweet-filler-7 {
   left: 50.0%;
-  top: 73.5%;
+  top: 78.0%;
   --tilt: 1.8deg;
   --filler-scale: 0.84;
   z-index: 4;
@@ -1536,8 +1536,8 @@ h3 {
 }
 
 .tweet-filler-8 {
-  left: 34.5%;
-  top: 69.8%;
+  left: 32.0%;
+  top: 73.7%;
   --tilt: -1.6deg;
   --filler-scale: 0.84;
   z-index: 4;
@@ -1545,8 +1545,8 @@ h3 {
 }
 
 .tweet-filler-9 {
-  left: 23.2%;
-  top: 59.8%;
+  left: 18.8%;
+  top: 62.0%;
   --tilt: 1.8deg;
   --filler-scale: 0.84;
   z-index: 4;
@@ -1554,7 +1554,7 @@ h3 {
 }
 
 .tweet-filler-10 {
-  left: 19.0%;
+  left: 14.0%;
   top: 46.0%;
   --tilt: -1.6deg;
   --filler-scale: 0.84;
@@ -1563,8 +1563,8 @@ h3 {
 }
 
 .tweet-filler-11 {
-  left: 23.2%;
-  top: 32.2%;
+  left: 18.8%;
+  top: 30.0%;
   --tilt: 1.8deg;
   --filler-scale: 0.84;
   z-index: 4;
@@ -1572,8 +1572,8 @@ h3 {
 }
 
 .tweet-filler-12 {
-  left: 34.5%;
-  top: 22.2%;
+  left: 32.0%;
+  top: 18.3%;
   --tilt: -1.6deg;
   --filler-scale: 0.84;
   z-index: 4;
@@ -1581,8 +1581,8 @@ h3 {
 }
 
 .tweet-filler-13 {
-  left: 56.3%;
-  top: 28.9%;
+  left: 57.4%;
+  top: 25.6%;
   --tilt: -1.5deg;
   --filler-scale: 0.84;
   z-index: 5;
@@ -1590,8 +1590,8 @@ h3 {
 }
 
 .tweet-filler-14 {
-  left: 66.6%;
-  top: 35.4%;
+  left: 69.4%;
+  top: 33.4%;
   --tilt: 1.7deg;
   --filler-scale: 0.84;
   z-index: 5;
@@ -1599,7 +1599,7 @@ h3 {
 }
 
 .tweet-filler-15 {
-  left: 70.5%;
+  left: 74.0%;
   top: 46.0%;
   --tilt: -1.5deg;
   --filler-scale: 0.84;
@@ -1608,8 +1608,8 @@ h3 {
 }
 
 .tweet-filler-16 {
-  left: 66.6%;
-  top: 56.6%;
+  left: 69.4%;
+  top: 58.6%;
   --tilt: 1.7deg;
   --filler-scale: 0.84;
   z-index: 5;
@@ -1617,8 +1617,8 @@ h3 {
 }
 
 .tweet-filler-17 {
-  left: 56.3%;
-  top: 63.1%;
+  left: 57.4%;
+  top: 66.4%;
   --tilt: -1.5deg;
   --filler-scale: 0.84;
   z-index: 5;
@@ -1626,8 +1626,8 @@ h3 {
 }
 
 .tweet-filler-18 {
-  left: 43.7%;
-  top: 63.1%;
+  left: 42.6%;
+  top: 66.4%;
   --tilt: 1.7deg;
   --filler-scale: 0.84;
   z-index: 5;
@@ -1635,8 +1635,8 @@ h3 {
 }
 
 .tweet-filler-19 {
-  left: 33.4%;
-  top: 56.6%;
+  left: 30.6%;
+  top: 58.6%;
   --tilt: -1.5deg;
   --filler-scale: 0.84;
   z-index: 5;
@@ -1644,7 +1644,7 @@ h3 {
 }
 
 .tweet-filler-20 {
-  left: 29.5%;
+  left: 26.0%;
   top: 46.0%;
   --tilt: 1.7deg;
   --filler-scale: 0.84;
@@ -1653,8 +1653,8 @@ h3 {
 }
 
 .tweet-filler-21 {
-  left: 33.4%;
-  top: 35.4%;
+  left: 30.6%;
+  top: 33.4%;
   --tilt: -1.5deg;
   --filler-scale: 0.84;
   z-index: 5;
@@ -1662,8 +1662,8 @@ h3 {
 }
 
 .tweet-filler-22 {
-  left: 43.7%;
-  top: 28.9%;
+  left: 42.6%;
+  top: 25.6%;
   --tilt: 1.7deg;
   --filler-scale: 0.84;
   z-index: 5;
