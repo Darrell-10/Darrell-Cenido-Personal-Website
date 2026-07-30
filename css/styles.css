@@ -148,6 +148,7 @@ a:hover {
 }
 
 .nav-wrap {
+  position: relative;
   max-width: var(--max);
   margin: 0 auto;
   padding: 0.7rem 1.25rem;
@@ -170,6 +171,15 @@ a:hover {
 
 .brand:hover {
   color: var(--cream);
+}
+
+.brand:hover .brand-text strong,
+.brand:hover .brand-text span {
+  color: inherit;
+}
+
+.brand:hover .brand-text span {
+  color: rgba(245, 230, 211, 0.8);
 }
 
 .brand-mark {
@@ -932,11 +942,13 @@ h3 {
     top: 100%;
     right: 0;
     left: 0;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
     flex-direction: column;
     background: #1f1109;
     border-radius: 0;
     border-top: 1px solid rgba(245, 230, 211, 0.1);
-    padding: 0.65rem 1.1rem 0.9rem;
+    padding: 0.65rem max(1.1rem, calc(50vw - (var(--max) / 2))) 0.9rem;
     box-shadow: 0 16px 28px rgba(20, 10, 4, 0.35);
   }
 
