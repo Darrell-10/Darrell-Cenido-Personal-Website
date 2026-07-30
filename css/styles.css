@@ -1398,7 +1398,7 @@ h3 {
   z-index: 2;
   pointer-events: none;
   user-select: none;
-  opacity: 0.4;
+  opacity: 0.44;
   transform: rotate(var(--tilt, 0deg)) scale(var(--filler-scale, 0.72));
   transform-origin: center center;
 }
@@ -1470,200 +1470,254 @@ h3 {
   height: 150px;
 }
 
-/* Outer ring fillers */
+/* Outer ring / edge gap fillers */
 .tweet-filler-1 {
-  left: 34%;
-  top: 6%;
+  left: 28%;
+  top: -1%;
   --tilt: 2.4deg;
   --filler-scale: 0.7;
   z-index: 1;
-  opacity: 0.36;
+  opacity: 0.4;
 }
 
 .tweet-filler-2 {
-  left: 82%;
-  top: 8%;
+  left: 78%;
+  top: -1%;
   --tilt: -2deg;
   --filler-scale: 0.68;
-  opacity: 0.34;
-}
-
-.tweet-filler-3 {
-  left: 87%;
-  top: 36%;
-  --tilt: 1.8deg;
-  --filler-scale: 0.72;
-  opacity: 0.36;
-}
-
-.tweet-filler-4 {
-  left: 81%;
-  top: 70%;
-  --tilt: -2.2deg;
-  --filler-scale: 0.68;
-  opacity: 0.34;
-}
-
-.tweet-filler-5 {
-  left: 30%;
-  top: 74%;
-  --tilt: 1.6deg;
-  --filler-scale: 0.72;
   opacity: 0.38;
 }
 
+.tweet-filler-3 {
+  left: 88%;
+  top: 18%;
+  --tilt: 1.8deg;
+  --filler-scale: 0.7;
+  opacity: 0.4;
+}
+
+.tweet-filler-4 {
+  left: 88%;
+  top: 55%;
+  --tilt: -2.2deg;
+  --filler-scale: 0.68;
+  opacity: 0.38;
+}
+
+.tweet-filler-5 {
+  left: 72%;
+  top: 78%;
+  --tilt: 1.6deg;
+  --filler-scale: 0.7;
+  opacity: 0.4;
+}
+
 .tweet-filler-6 {
-  left: -3%;
-  top: 70%;
+  left: 28%;
+  top: 80%;
   --tilt: -1.4deg;
-  --filler-scale: 0.66;
-  opacity: 0.32;
+  --filler-scale: 0.68;
+  opacity: 0.38;
 }
 
 .tweet-filler-7 {
   left: -4%;
-  top: 6%;
+  top: 78%;
   --tilt: 2deg;
-  --filler-scale: 0.68;
-  opacity: 0.33;
+  --filler-scale: 0.66;
+  opacity: 0.36;
 }
 
-/* Dense cluster behind / around centerpiece */
 .tweet-filler-8 {
-  left: 36%;
+  left: -5%;
   top: 30%;
-  --tilt: -2.1deg;
+  --tilt: -1.8deg;
+  --filler-scale: 0.68;
+  z-index: 1;
+  opacity: 0.38;
+}
+
+.tweet-filler-9 {
+  left: -4%;
+  top: -1%;
+  --tilt: 2.1deg;
+  --filler-scale: 0.66;
+  z-index: 1;
+  opacity: 0.36;
+}
+
+.tweet-filler-10 {
+  left: 40%;
+  top: -2%;
+  --tilt: -2.4deg;
+  --filler-scale: 0.64;
+  z-index: 1;
+  opacity: 0.37;
+}
+
+/* Ring gaps between real tweets */
+.tweet-filler-11 {
+  left: 62%;
+  top: 14%;
+  --tilt: 1.2deg;
   --filler-scale: 0.62;
   z-index: 3;
   opacity: 0.46;
 }
 
-.tweet-filler-9 {
-  left: 54%;
-  top: 28%;
-  --tilt: 2.3deg;
-  --filler-scale: 0.6;
+.tweet-filler-12 {
+  left: 82%;
+  top: 36%;
+  --tilt: -2.4deg;
+  --filler-scale: 0.64;
   z-index: 3;
   opacity: 0.44;
 }
 
-.tweet-filler-10 {
-  left: 28%;
-  top: 42%;
-  --tilt: -1.7deg;
-  --filler-scale: 0.64;
-  z-index: 3;
-  opacity: 0.48;
-}
-
-.tweet-filler-11 {
-  left: 48%;
-  top: 34%;
-  translate: -50% 0;
-  --tilt: 1.2deg;
-  --filler-scale: 0.58;
-  z-index: 4;
-  opacity: 0.5;
-}
-
-.tweet-filler-12 {
-  left: 58%;
-  top: 42%;
-  --tilt: -2.4deg;
-  --filler-scale: 0.63;
-  z-index: 3;
-  opacity: 0.47;
-}
-
 .tweet-filler-13 {
-  left: 40%;
-  top: 48%;
+  left: 68%;
+  top: 54%;
   --tilt: 2deg;
-  --filler-scale: 0.6;
+  --filler-scale: 0.63;
   z-index: 3;
   opacity: 0.45;
 }
 
 .tweet-filler-14 {
-  left: 50%;
-  top: 52%;
-  translate: -50% 0;
+  left: 38%;
+  top: 72%;
   --tilt: -1.5deg;
-  --filler-scale: 0.56;
+  --filler-scale: 0.62;
   z-index: 2;
   opacity: 0.42;
 }
 
 .tweet-filler-15 {
-  left: 33%;
-  top: 36%;
+  left: 8%;
+  top: 54%;
   --tilt: 1.8deg;
-  --filler-scale: 0.58;
+  --filler-scale: 0.63;
   z-index: 2;
-  opacity: 0.4;
+  opacity: 0.44;
 }
 
 .tweet-filler-16 {
-  left: 62%;
-  top: 34%;
+  left: 6%;
+  top: 10%;
   --tilt: -1.9deg;
-  --filler-scale: 0.59;
+  --filler-scale: 0.62;
   z-index: 2;
-  opacity: 0.41;
+  opacity: 0.42;
 }
 
+/* Inner denser cluster around / behind centerpiece */
 .tweet-filler-17 {
-  left: 44%;
-  top: 40%;
+  left: 34%;
+  top: 28%;
   --tilt: 2.6deg;
-  --filler-scale: 0.55;
+  --filler-scale: 0.58;
   z-index: 4;
-  opacity: 0.52;
+  opacity: 0.5;
 }
 
 .tweet-filler-18 {
-  left: 52%;
-  top: 46%;
+  left: 58%;
+  top: 26%;
   --tilt: -2.8deg;
   --filler-scale: 0.57;
+  z-index: 4;
+  opacity: 0.48;
+}
+
+.tweet-filler-19 {
+  left: 30%;
+  top: 48%;
+  --tilt: 1.4deg;
+  --filler-scale: 0.6;
+  z-index: 4;
+  opacity: 0.5;
+}
+
+.tweet-filler-20 {
+  left: 62%;
+  top: 48%;
+  --tilt: -1.6deg;
+  --filler-scale: 0.59;
+  z-index: 4;
+  opacity: 0.48;
+}
+
+.tweet-filler-21 {
+  left: 42%;
+  top: 36%;
+  --tilt: -2deg;
+  --filler-scale: 0.55;
+  z-index: 3;
+  opacity: 0.46;
+}
+
+.tweet-filler-22 {
+  left: 50%;
+  top: 56%;
+  translate: -50% 0;
+  --tilt: 2.2deg;
+  --filler-scale: 0.56;
+  z-index: 3;
+  opacity: 0.45;
+}
+
+.tweet-filler-23 {
+  left: 72%;
+  top: 8%;
+  --tilt: 1.7deg;
+  --filler-scale: 0.6;
+  z-index: 2;
+  opacity: 0.42;
+}
+
+.tweet-filler-24 {
+  left: 18%;
+  top: 34%;
+  --tilt: -2.1deg;
+  --filler-scale: 0.61;
   z-index: 2;
   opacity: 0.43;
 }
 
-.tweet-filler-19 {
-  left: 37%;
-  top: 54%;
-  --tilt: 1.4deg;
-  --filler-scale: 0.61;
+.tweet-filler-25 {
+  left: 76%;
+  top: 42%;
+  --tilt: 2.4deg;
+  --filler-scale: 0.59;
   z-index: 2;
-  opacity: 0.4;
+  opacity: 0.42;
 }
 
-.tweet-filler-20 {
-  left: 60%;
-  top: 52%;
-  --tilt: -1.6deg;
+.tweet-filler-26 {
+  left: 20%;
+  top: 70%;
+  --tilt: -1.8deg;
   --filler-scale: 0.6;
   z-index: 2;
-  opacity: 0.39;
+  opacity: 0.41;
 }
 
-.tweet-filler-21 {
-  left: 46%;
-  top: 26%;
-  --tilt: -2deg;
-  --filler-scale: 0.54;
-  z-index: 1;
-  opacity: 0.36;
+.tweet-filler-27 {
+  left: 48%;
+  top: 18%;
+  --tilt: 1.5deg;
+  --filler-scale: 0.57;
+  z-index: 3;
+  opacity: 0.46;
 }
 
-.tweet-filler-22 {
-  left: 55%;
-  top: 56%;
-  --tilt: 2.2deg;
+.tweet-filler-28 {
+  left: 48%;
+  top: 64%;
+  --tilt: -2.3deg;
   --filler-scale: 0.58;
-  z-index: 1;
-  opacity: 0.37;
+  z-index: 3;
+  opacity: 0.44;
 }
 
 .tweets-gallery-wall .twitter-embed-wrap:hover {
