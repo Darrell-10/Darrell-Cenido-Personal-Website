@@ -1118,6 +1118,16 @@ h3 {
   text-align: center;
 }
 
+.resume-download {
+  margin-top: 0;
+  justify-items: center;
+  align-self: center;
+}
+
+.resume-download-layout {
+  align-items: center;
+}
+
 .resume-preview {
   margin: 1rem 0 1.25rem;
   border-radius: 16px;
