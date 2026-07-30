@@ -1173,7 +1173,8 @@ h3 {
 }
 
 .resume-intro p {
-  max-width: min(48rem, 92vw);
+  /* Wide enough to breathe, narrow enough to settle into ~2 lines on desktop */
+  max-width: min(40rem, 92vw);
   text-align: center;
 }
 
