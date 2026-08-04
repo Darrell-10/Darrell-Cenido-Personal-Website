@@ -169,7 +169,7 @@ a:hover {
   box-shadow: 0 0 0 4px rgba(168, 213, 229, 0.25);
 }
 
-/* Header — full-width deep brown bar */
+/* Header: full-width deep brown bar */
 .site-header {
   position: sticky;
   top: 0;
@@ -472,7 +472,7 @@ h3 {
   white-space: nowrap;
 }
 
-/* Looping affiliation conveyor — logos only, no boxes */
+/* Looping affiliation conveyor: logos only, no boxes */
 .conveyor-section {
   margin-bottom: 3rem;
 }

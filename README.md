@@ -2,11 +2,11 @@
 
 A GitHub Pages personal site for Darrell Cenido with:
 
-- **About Me** — overview, affiliations, and hobbies
-- **Personal Statement** — “I stopped dotting my i’s” essay
-- **Resume** — interactive journey map and resume download
-- **Gallery** — embedded YouTube, Instagram, Hudl, and feature content adapted from [darrell.cenido.info](https://darrell.cenido.info)
-- **Blog** — coming soon
+- **About Me**: overview, affiliations, and hobbies
+- **Personal Statement**: “I stopped dotting my i’s” essay
+- **Resume**: interactive journey map and resume download
+- **Gallery**: embedded YouTube, Instagram, Hudl, and feature content adapted from [darrell.cenido.info](https://darrell.cenido.info)
+- **Blog**: coming soon
 
 ## Color palette
 

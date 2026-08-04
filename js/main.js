@@ -94,14 +94,14 @@ document.addEventListener("DOMContentLoaded", () => {
         coords: [37.7805, -121.5425],
         title: "Mountain House, CA",
         detail:
-          "Bethany Elementary School — hometown roots where the journey began.",
+          "Bethany Elementary School: hometown roots where the journey began.",
         zoom: 11,
       },
       {
         coords: [37.97798, -122.03107],
         title: "Concord, CA",
         detail:
-          "De La Salle High School — CS &amp; math tutoring in the Learning Center, API Club president, and varsity basketball.",
+          "De La Salle High School: CS &amp; math tutoring in the Learning Center, API Club president, and varsity basketball.",
         zoom: 12,
       },
       {
@@ -116,14 +116,14 @@ document.addEventListener("DOMContentLoaded", () => {
         coords: [47.6671, -117.4024],
         title: "Spokane, WA",
         detail:
-          "Gonzaga University — B.S. Computer Science &amp; Hogan Entrepreneurial Leadership, Club Basketball, Class of 2028. Code Lexica via New Venture Lab — ICP research, pitch-deck feedback, and an ROI calculator for sales enablement.",
+          "Gonzaga University: B.S. Computer Science &amp; Hogan Entrepreneurial Leadership, Club Basketball, Class of 2028. Code Lexica via New Venture Lab: ICP research, pitch-deck feedback, and an ROI calculator for sales enablement.",
         zoom: 11,
       },
       {
         coords: [36.9741, -122.0308],
         title: "Santa Cruz, CA",
         detail:
-          "BrandCapsule — AI-Native Marketing Intern building lifecycle email systems, KPI dashboards, and AI Discovery Intelligence for brand growth.",
+          "BrandCapsule: AI-Native Marketing Intern building lifecycle email systems, KPI dashboards, and AI Discovery Intelligence for brand growth.",
         zoom: 12,
       },
     ];
@@ -194,7 +194,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     stopButtons.forEach((btn) => {
       const index = Number(btn.dataset.stop);
-      // Map movement is click-only — hover is visual feedback only.
+      // Map movement is click-only; hover is visual feedback only.
       btn.addEventListener("click", (event) => {
         event.preventDefault();
         goToStop(index, { openPopup: true });
