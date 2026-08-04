@@ -91,14 +91,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const stops = [
       {
-        // Tandag City, Surigao del Sur, Philippines
-        coords: [9.0794, 126.1711],
-        title: "Tandag City, Surigao del Sur",
-        detail:
-          "Where my family is from — Quezon City, Manila, and Tandag City.",
-        zoom: 6,
-      },
-      {
         coords: [37.7805, -121.5425],
         title: "Mountain House, CA",
         detail:
@@ -111,6 +103,14 @@ document.addEventListener("DOMContentLoaded", () => {
         detail:
           "De La Salle High School — CS &amp; math tutoring in the Learning Center, API Club president, and varsity basketball.",
         zoom: 12,
+      },
+      {
+        // Tandag City, Surigao del Sur, Philippines
+        coords: [9.0794, 126.1711],
+        title: "Tandag City, Surigao del Sur",
+        detail:
+          "Where I learned the value of service and giving back to the community.",
+        zoom: 6,
       },
       {
         coords: [47.6671, -117.4024],
@@ -134,9 +134,10 @@ document.addEventListener("DOMContentLoaded", () => {
       return marker;
     });
 
-    // Connect the U.S. path as a continuous route; Philippines stands as family roots.
+    // Connect the U.S. path as a continuous route; Philippines stands apart.
+    const usStops = stops.filter((stop) => stop.coords[1] < 0);
     L.polyline(
-      stops.slice(1).map((stop) => stop.coords),
+      usStops.map((stop) => stop.coords),
       {
         color: "#3b2414",
         weight: 3,
