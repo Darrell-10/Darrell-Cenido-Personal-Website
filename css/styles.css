@@ -971,6 +971,12 @@ h3 {
   font-family: var(--font-num);
 }
 
+.favorite-quote cite::before {
+  content: "by ";
+  letter-spacing: 0.08em;
+  font-weight: 600;
+}
+
 @media (max-width: 900px) {
   .favorite-quotes-list {
     grid-template-columns: 1fr;
