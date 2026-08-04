@@ -927,21 +927,20 @@ h3 {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.35rem;
-  max-width: 42rem;
+  max-width: none;
+  width: 100%;
   align-items: stretch;
 }
 
 .favorite-quote {
   margin: 0;
-  padding: 1.15rem 1.2rem 1.25rem;
+  padding: 0;
   border: 0;
-  border-radius: 24px;
-  background: var(--clay);
-  box-shadow: var(--raise);
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  height: auto;
+  display: block;
 }
 
 .favorite-quote p {
