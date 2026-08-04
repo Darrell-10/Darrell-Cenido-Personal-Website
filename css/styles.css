@@ -927,7 +927,7 @@ h3 {
   grid-template-columns: repeat(3, 1fr);
   gap: 1.35rem;
   max-width: none;
-  align-items: start;
+  align-items: stretch;
 }
 
 .favorite-quote {
@@ -938,6 +938,9 @@ h3 {
   background: var(--clay);
   box-shadow: var(--raise);
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .favorite-quote p {
