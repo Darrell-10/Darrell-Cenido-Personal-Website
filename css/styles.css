@@ -925,9 +925,9 @@ h3 {
 
 .favorite-quotes-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   gap: 1.35rem;
-  max-width: none;
+  max-width: 42rem;
   align-items: stretch;
 }
 
@@ -985,7 +985,6 @@ h3 {
 
 @media (max-width: 900px) {
   .favorite-quotes-list {
-    grid-template-columns: 1fr;
     max-width: 36rem;
   }
 }
